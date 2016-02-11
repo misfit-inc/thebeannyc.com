@@ -1,0 +1,1826 @@
+/*  
+Theme Name: Irresistible
+Theme URI: http://www.woothemes.com/
+Description: Irresistible by WooThemes
+Version: 2.0.1
+Author: WooThemes
+Author URI: http://www.woothemes.com/
+*/
+
+/*------------------------------------------------------------------
+
+1.	RESET
+	Global reset for all HTML elements
+
+------------------------------------------------------------------*/
+
+* { font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; }
+html { height: 100% }
+body { background: #fff; color: #000; font-size: 100.01%; min-height: 101%; text-align: left; position: relative; }
+img, fieldset, abbr, acronym { border: 0 }
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+address, caption, cite, code, dfn, em, strong, var { font-style: normal; font-weight: normal; }
+caption { text-align: left }
+q:before, q:after, blockquote:before, blockquote:after { content: '' }
+input, select, textarea, button { font-size: 1em; line-height: normal; width: auto; }
+input, select { vertical-align: middle }
+textarea { height: auto; overflow: auto; }
+option { padding-left: 0.6em }
+button { background: none; border: 0; cursor: pointer; text-align: center; }
+ul, ol { list-style-type:none; }
+iframe { position: relative !important; }
+
+/*------------------------------------------------------------------
+
+2.	MAIN STYLES
+	General definitions
+
+--------------------------------------------------------------------
+
+/*-------------------------------
+2.a Tags defaults
+---------------------------------
+[?] Tags only. No classes or ID's here.
+*/
+	
+body#woothemes {
+	background: #941111 none repeat-x center 0;
+	color: #000000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+p, ul, ol, table { 
+	color: #262626;
+	font-family:trebuchet MS;
+	font-size:17px;
+	line-height:22px;
+	margin:13px 27px 13px;
+}
+
+em { color: #d9e3ea }
+
+
+/* Headlines */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	line-height: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1 { font-size:35px; }
+
+h2 { font-size:28px; }
+
+h3 { font-size:26px; }
+
+h4 {
+	color: #59361C;
+	font-size:20px;
+}
+
+h5 { font-size:12px; }
+
+h6 { font-size:10px; }
+
+h1, h2, h3 {
+	color: #59361C;
+	margin-top: 15px;
+}
+
+.dn {display: none;}
+
+.wrap {
+	width: 100%;
+	clear: both;
+}
+
+/* Anchors */
+a, a:link, a:visited {
+	color:#BD2508;
+	text-decoration:none;
+}
+a:hover, a:active, a.active {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+/* Lists */
+#main div.box1 ul {
+	padding:20px;
+	list-style:inside;
+}
+
+#main div.box1 ol {
+	padding:20px;
+	list-style:inside;
+	list-style-type:decimal;
+}
+
+#sidebar .box1 { 
+	margin:0 18px;
+}
+
+#sidebar #videos .box1 { margin: 0 0 20px; padding: 10px; }
+
+#sidebar ul, #sidebar ol { 
+	list-style-type:none;
+}
+
+blockquote {
+	margin:15px 0; padding:10px 20px;
+	border-bottom:1px solid #000;
+	font:1.00em Georgia, "Times New Roman", Times, serif; color:#fff;
+	background:url(images/bg-box.png) repeat scroll 0 0 !important;
+	background: #222;
+}
+
+/*-------------------------------
+2.b Base layout
+---------------------------------
+[?] Mostly ID's. Classes & tags allowed.
+*/
+
+#wrap {
+	margin: auto;
+	text-align: left;
+	width: 960px;
+	position: relative;
+}
+
+	#header, #content, #footer {
+		float: left; display: inline;
+		clear: both;
+		position: relative;
+	}
+	
+	.rays {
+		background:transparent url(../../../images/top-left-rays.png) repeat-x scroll center top;
+		width:214px;
+		height:184px;
+		position:absolute;
+		float:left;
+		z-index:1;
+	}
+
+	#header {
+		width:100%;
+		background:transparent url(../../../images/header-background.png) repeat-x scroll center top;
+		margin-top:20px;
+		padding-bottom: 15px;
+	}
+	
+		#header span img {
+			float:right;
+			margin-right:-11px;
+			margin-top:-11px;
+		}
+		
+			.beansteam {
+				background:transparent url(../../../images/bean-steam.png) no-repeat scroll 0 0;
+				height:116px;
+				margin:0 auto -115px;
+				width:746px;
+				z-index:2;
+			}
+			
+			#logo { 
+				background:transparent url(../../../images/the-bean-logo.png) no-repeat scroll 0 0;
+				height:356px;
+				margin:-145px auto 0;
+				width:382px;
+				z-index:1;
+			}
+	
+				#logo a {
+					cursor:pointer;
+					display:block;
+					height:325px;
+					position:relative;
+					width:385px;
+					z-index:3;
+				}
+				
+			.pssst {
+				background:transparent url(../../../images/pssst.png) no-repeat scroll 0 0;
+				height:60px;
+				margin:-22px auto 0;
+				width:887px;
+			}
+			
+	#content {
+		margin-top:-11px;
+		padding:0 0 100px;
+		width:100%;
+	}
+	
+		#content.homepg {
+			background:transparent url(../../../images/main-background.png) repeat-x scroll center 0;
+		}
+				
+		#content.subpage {
+			background:#fbdccd;
+			margin:0 auto;
+		}
+		
+		.lshadow {
+			background:transparent url(../../../images/subpage-left-shadow.png) repeat-y scroll left 0;
+			margin:0 auto;
+			padding-left:60px;
+			width:900px;
+		}
+		
+		.rshadow {
+			background:transparent url(../../../images/subpage-right-shadow.png) repeat-y scroll right 0;
+			padding-right:0;
+			width:900px;
+		}
+	
+		#main {
+			width: 900px;
+			background:transparent;
+			margin-bottom:-22px;
+			margin-left:-30px;
+			margin-top:0;
+		}
+		
+			#main .innerbox {
+				-moz-border-radius: 6px;
+				-khtml-border-radius: 6px;
+				-webkit-border-radius: 6px;
+				border-radius: 6px;
+				border:4px dashed #59361c;
+				margin:10px 0;
+				padding:0 10px 10px;
+			}
+			
+				#main .innerbox p {
+					margin:9px 0;
+				}
+			
+				#main .innerbox h4, #main .innerbox p, #main .innerbox h1, #main .innerbox h2, #main .innerbox h3 {
+					margin-left:30px;
+					color:#59361c;
+				}
+
+			#main.subpage {
+				background:#FFFFFF none repeat scroll 0 0;
+				margin-bottom:-22px;
+				margin-left:-30px;
+				margin-top:0;
+				padding-bottom: 70px;
+				padding-top: 20px;
+				overflow: auto;
+			}
+		
+			#main.homepg {
+				height:535px;
+				margin:0 auto;
+				width:980px;
+				padding-top:12px;
+			}
+			
+				.wehave {
+					background:transparent url("../../../images/we-have.png") no-repeat scroll 0 0;
+					float:left;
+					height:195px;
+					margin-top:175px;
+					width:312px;
+					margin-left:20px;
+				}
+				
+				.donthave {
+					background:transparent url("../../../images/we-dont-have.png") no-repeat scroll 0 0;
+					float:right;
+					height:198px;
+					margin-top:175px;
+					width:317px;
+				}
+				
+				.sugarjar {
+					background:url("../../../images/sugar-jar.png") no-repeat scroll 0 0 transparent;
+					height:469px;
+					margin-left:-30px;
+					margin-top:110px;
+					width:332px;
+				}
+				
+				.twitter {
+					background:url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 -115px transparent;
+					height:114px;
+					margin:0 0 -50px 230px;
+					width:180px;
+				}
+				
+					.twitter a {
+						display:block;
+						height:114px;
+						width:180px;
+					}
+				
+					.twitter:hover {
+						background:url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 0 transparent;
+					}
+				
+				.foursquare {
+					background:url("../../../images/four-square-sugar.png") no-repeat scroll 0 0 transparent;
+					height:70px;
+					margin:0 0 -66px 88px;
+					width:80px;
+				}
+				
+					.foursquare a {
+						display:block;
+						height:70px;
+						width:80px;
+					}
+				
+					.foursquare:hover {
+							background:url("../../../images/four-square-sugar.png") no-repeat scroll 0 -70px transparent;
+						}
+				
+				.facebook {
+					background:url("../../../images/facebook-sugar.png") no-repeat scroll 0 0 transparent;
+					height:69px;
+					margin:0 0 -136px -30px;
+					width:80px;
+				}
+				
+					.facebook a {
+						display:block;
+						height:69px;
+						width:80px;
+					}
+				
+					.facebook:hover {
+						background:url("../../../images/facebook-sugar.png") no-repeat scroll 0 -69px transparent;
+					}
+				
+				.tumblr {
+					background:url("../../../images/tumblr-sugar.png") no-repeat scroll 0 0 transparent;
+					height:70px;
+					margin:0 0 -60px 32px;
+					width:80px;
+				}
+				
+					.tumblr a {
+						display:block;
+						height:70px;
+						width:80px;
+					}
+				
+					.tumblr:hover {
+							background:url("../../../images/tumblr-sugar.png") no-repeat scroll 0 -70px transparent;
+						}
+				
+				.yelp {
+					background:url("../../../images/yelp-sugar.png") no-repeat scroll 0 0 transparent;
+					height:71px;
+					margin:0 0 -69px 146px;
+					width:80px;
+				}
+				
+					.yelp a {
+						display:block;
+						height:71px;
+						width:80px;
+					}
+				
+					.yelp:hover {
+						background:url("../../../images/yelp-sugar.png") no-repeat scroll 0 -71px transparent;
+					}
+				
+				.pinterest {
+					background: url("images/pinterestsugar.png") no-repeat scroll 0 -127px transparent;
+					height: 81px;
+					margin: 0 0 -78px 54px;
+					width: 86px;
+				}
+				
+					.pinterest a {
+						display:block;
+						height: 70px;
+						width: 86px;
+					}
+					
+					.pinterest:hover {
+						background: url("images/pinterestsugar.png") no-repeat scroll 0 0 transparent;
+					}
+				
+				.instagram {
+					background: url("images/instagramsugar.png") no-repeat scroll 0 -110px transparent;
+					height: 77px;
+					margin: 0 0 -33px -12px;
+					width: 85px;
+				}
+				
+					.instagram a {
+						display:block;
+						height: 77px;
+						width: 86px;
+					}
+					
+					.instagram:hover {
+						background: url("images/instagramsugar.png") no-repeat scroll 0 0 transparent;
+					}
+				
+	.comments {
+		width: 980px;
+		margin: 0 auto;
+	}
+	
+	.bottom-content {
+		background: #fff;
+	}
+
+.menu-header{
+	width: 205px;
+}
+
+#menu-the-bean-official-page li a {
+    color: #FBDCCD;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	display: block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	width: 60px;
+	float: left;
+}
+
+
+					
+/*-------------------------------
+The Bean Fights Back Page 
+-------------------------------*/
+
+#main.tbfb {
+	margin: 0 auto;
+    width: 660px;
+}
+
+#main.tbfb div.post {
+	width: 610px;
+}
+
+#main.tbfb .post.clearfix p {
+	font-size: 27px;
+    line-height: 34px;
+	text-align: left;
+	color: #000000;
+	margin: 30px 0 20px;
+}
+
+#main.tbfb .post.clearfix a {
+	color: #BD2506;
+	text-decoration: underline;
+}
+	#main.tbfb .post.clearfix a:hover {
+		color: #4E312B;
+	}
+
+.thebeanfights {
+	height: 60px;
+	width: 480px;
+	background:url("images/the-bean-fights-back/the-bean-fights.png") no-repeat scroll 0 0 transparent;
+	margin: 0 auto;
+}
+
+.readbelow {
+	height: 20px;
+	width: 110px;
+	background:url("images/the-bean-fights-back/read-below.png") no-repeat scroll 0 0 transparent;
+	margin: 0 auto 18px;
+}
+
+.thebeanwarrior {
+	background:url("images/the-bean-fights-back/the-bean-warrior.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 105px;
+    position: absolute;
+    top: 240px;
+    width: 135px;
+}
+
+.redeyedjoe {
+    background: url("images/the-bean-fights-back/red-eyed-joe.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 325px;
+    left: 0;
+    margin-top: 30px;
+    width: 205px;
+}
+
+.pleaseshareour {
+    background: url("images/the-bean-fights-back/please-share-our.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+    padding-left: 230px;
+    top: 350px;
+    width: 360px;
+}
+
+.cardboard {
+    background: url("images/the-bean-fights-back/cardboard.png") repeat scroll center top transparent;
+    height: 96px;
+    padding: 10px 0 0;
+    width: 100%;
+}
+
+.newsletter {
+	overflow: auto;
+	width: 980px;
+	margin: auto;
+}
+
+.getnotified {
+    background: url("images/the-bean-fights-back/get-notified.png") no-repeat scroll 0 0 transparent;
+    height: 30px;
+    margin: 0 auto;
+    width: 715px;
+}
+
+.doyouthink {
+	height: 119px;
+	width: 801px;
+	background:url("images/the-bean-fights-back/do-you-think.png") no-repeat scroll 0 0 transparent;
+	margin: 30px auto;
+}
+
+/*.supportthebean {
+    background: url("images/the-bean-fights-back/support-the-bean.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 135px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 135px;
+    z-index: 999;
+}*/
+
+.supportthebean:hover {
+	background-position: 0px -140px;
+}
+
+
+/*-------------------------------
+The Bean Fights Back Page (END) 
+-------------------------------*/
+
+/*-------------------------------
+ Blog Page
+-------------------------------*/
+
+#main.blog div.box1 {
+	width: 530px;
+	float: left;
+	padding: 0 20px;
+}
+	
+		.home #sidebar {
+			float: right;
+			width: 543px;
+		}
+		
+		#sidebar {
+			float: right;
+			width: 303px;		
+			background:#ffffff;
+			padding-bottom:15px;
+		}
+		
+		
+
+/*-------------------------------
+ Footer 
+-------------------------------*/	
+		
+#footer {
+	width: 100%; 
+	background: transparent url(../../../images/footer-background.png) repeat-x scroll center bottom;
+	padding-bottom: 10px;
+}
+
+.misfit-inc {
+    background: url("images/misfit-inc.png") no-repeat scroll 0 40px transparent !important;
+    clear: none;
+    display: block;
+    float: right;
+    height: 67px;
+    margin: -39px 0px 0px 10px;
+    width: 142px;
+}
+	.misfit-inc:hover {
+		background-position: 0 -40px !important;
+	}
+
+#credits {
+	width:980px;
+	margin:0 auto;
+}
+
+	#credits p {
+		color:#FBDCCD;
+		margin-top: 50px;
+	}
+	
+	#credits p a {
+		color:#DDB86A; 
+		text-decoration: none;
+	}
+		#credits p a:hover {
+			text-decoration: underline;
+		}
+
+	#footerWrap {
+		background:transparent url(../../../images/cardboard.jpg) repeat scroll center top;
+		color:#DADADA;
+		margin:40px auto 0;
+		position:relative;
+		width:100%;
+	}
+	
+		#coffeewarning {
+			background:transparent url(../../../images/warning-photostream.png) no-repeat scroll 0 0;
+			height:214px;
+			margin-left:-17px;
+			position:absolute;
+			top:-80px;
+			width:170px;
+		}
+	
+		#footerWrap h3 {
+			display:none;
+		}
+	
+	
+/* Fix Footer Position */
+html, body, * html #wrap {height: 100%;}
+#footer {margin-top: -105px; bottom: -7px }
+
+
+/*-------------------------------
+2.c Navigations
+-------------------------------*/
+
+ul.nav { margin: 0 }
+
+/* Main navigation */
+
+#nav {
+	height:38px;
+	left:0;
+	margin:112px auto 20px;
+	position:relative;
+	width:580px;
+}
+
+	#nav, #nav ul {
+		line-height:1;
+		list-style:none outside none;
+		padding:0;
+		width:790px;
+		z-index:1;
+	}
+	
+		#nav li {
+			float:left;
+			line-height:15px;
+			margin:0 5px;
+			width:60px;
+		}
+		
+			#nav li.page_item.page-item-67 {
+				margin-right:375px;
+			}
+		
+			#nav li:hover {
+			}
+			
+			#nav li a {
+				color:#fbdccd;
+				font-size:15px;
+				text-align:center;
+				font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+				text-transform:uppercase;
+				display: block;
+				text-decoration: none;
+				padding-top: 70px;
+			}
+			
+				#nav li#menu-item-251 a:hover {	
+					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -168px;
+				}
+				
+						#nav li.current_page_item.page-item-41 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -168px;
+						}
+				
+				#nav li#menu-item-250 a:hover {	
+					background: url("../../../images/nav-icons.png") no-repeat scroll center 23px transparent;
+				}
+				
+					#nav li.current_page_item.page-item-2 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 8px 23px;
+						}
+								
+				#nav li.page_item.page-item-6 a:hover {	
+					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -41px;
+				}
+				
+					#nav li.current_page_item.page-item-6 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -41px;
+						}
+								
+				#nav li.page_item.page-item-67 a:hover {	
+					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -106px;
+				}
+				
+					#nav li.current_page_item.page-item-67 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -106px;
+						}
+								
+				#nav li#menu-item-252 a:hover {	
+					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -234px;
+				}
+				
+					#nav li.current_page_item.page-item-16 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -234px;
+						}
+								
+				#nav li#menu-item-253 a:hover {	
+					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 26px -300px;
+				}
+				
+					#nav li.current_page_item.page-item-10 a {
+							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 26px -300px;
+						}
+						
+				#nav li#menu-item-286 a:hover {background: url(../../../images/nav-icons2.png) no-repeat scroll 8px 23px transparent;}
+						
+				#nav li.current_page_item a:hover {
+					background:#ffffff;
+				}
+				
+/* Style drop down list */
+
+#nav li ul {
+	position: absolute;
+	width: 200px;
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li.sfhover ul {
+	left: auto;
+}
+
+#nav li ul li a {
+	background: url(images/bg-nav.png);
+	line-height: 18px;
+	font-size: 11px;
+	color: #fff;
+	width: 150px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+}
+
+	#nav li ul li a:hover {
+		background: #FFF;
+		color:#222;
+	}
+
+		#nav li ul ul {
+			margin: -35px 0 0 180px;
+		}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul {
+	left: auto;
+}
+
+/* IE7 Fix */
+
+#nav li:hover, #nav li.hover {  
+	position: static;
+}
+
+ul#footerNav {
+	position: absolute;
+	top: 27px; right: 0;
+}
+	ul#footerNav li {
+		float: left; display: inline;
+		margin-left: 15px;
+	}
+
+
+/*-------------------------------
+2.d Elements, ID's & Classes
+-------------------------------*/
+
+#footer #footerWrap #copy {
+	position: absolute;
+	top: 27px; left: 0;
+	color:#fff;
+	margin:0;
+}
+	#footer #footerWrap #copy a {
+		color: #6099ff;
+	}
+
+div#hi {
+	color: #2a2b2b;
+	font: 18px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: right;
+	width: 440px;
+	position: absolute;
+	top: 135px; right: 0;
+}
+	div#hi p a {
+		color: #d0d0d0;
+		font: 11px/11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+h3#myVideos {
+	background: url(images/bg-h2-myvideos.png) no-repeat;
+	width: 138px; height: 33px;
+	margin: 0 0 11px 12px;
+}
+
+h3#myPhotos {
+	background: url(images/bg-h2-myphotos.png) no-repeat;
+	width: 137px; height: 34px;
+	margin: 0 0 10px;
+}
+h3#myPortfolio {
+	background: url(images/bg-h2-myportfolio.png) no-repeat;
+	width: 160px; height: 34px;
+	margin: 0 0 10px;
+}
+h3#myLifestream {
+	background: url(images/bg-h2-mylifestream.png) no-repeat;
+	width: 189px; height: 34px;
+	margin: 0 0 10px;
+}
+h3#myFavblog {
+	background: url(images/bg-h2-myfavblog.png) no-repeat;
+	width: 150px; height: 32px;
+	margin: 0 0 10px;
+}
+
+
+h2.lifestream_date { display:none; } 
+p.lifestream_credits { display:none; } 
+
+
+div.box1, ol.commentlist li, form#comments { background: none repeat !important; background: #111; }
+
+div.box1 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin: 0 0 20px;
+	padding: 0 20px 35px;
+}
+	div.box1 ul, div.box1 ul.blog-list li p { margin: 0 }
+
+		div.box1 ul.blog-list li {
+			border-bottom: 1px dashed #3f566e;
+			padding: 0 0 15px;
+		}
+
+	div.box1 p.link {
+		text-align: right;
+		margin: 0 0 15px;
+	}
+	
+	div.box1 ul.left-list {
+		float: left;
+		width: 230px;
+		padding: 10px 0 10px 10px;
+	}
+
+	div.box1 ul.right-list {
+		float: right;
+		width: 230px;
+		padding: 10px 10px 10px 0;
+	}
+	
+		div.box1 ul.left-list li, div.box1 ul.right-list li, div.box1 ul.list3 li {
+			line-height: 13px;
+			border-top: 1px dashed #9b1616;
+			padding: 8px 0;
+		}
+		
+		div.box1 ul.list3 {
+			margin: 15px 0 0;
+		}
+
+		div.box1 ul.list3 li {
+			padding: 15px 0;
+		}
+		
+		div.box1 ul.list3 li ul {
+			margin: 0;
+			border: none !Important;
+		}
+
+		div.box1 ul.list3 li ul li {
+			margin: 0 0 0 15px;
+			padding: 15px 0 0;
+			border: none !Important;
+		}
+		
+		div.box1 ul.left-list li a, div.box1 ul.right-list li a, div.box1 ul.list3 li a { color: #dadada }
+
+div.box2 {
+	background-color: #141517;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px;
+}
+
+h4.txt1 {
+	background: url(images/ico-1.gif) no-repeat 15px 3px;
+	padding: 0 0 10px 45px;
+}
+
+#sidebar h3 {
+	-moz-border-radius: 16px 0 0 16px;
+	-khtml-border-radius: 16px 0 0 16px;
+	-webkit-border-radius: 16px 0 0 16px;
+	border-radius: 16px 0 0 16px;
+	background: none no-repeat scroll 20px 4px #3A1B09;
+	color: #E7DDB0;
+	font-size: 18px;
+	height: 30px;
+	line-height: 27px;
+	padding-left: 50px;
+	display: block;
+    width: 274px;
+	margin: 10px 0 11px -20px;
+}
+
+#sidebar a {
+}
+	#sidebar a:hover {
+		text-decoration: none;
+	}
+
+#text-4 h3 {
+	background-image: url(images/sidebar-header-icons.png);
+}
+
+#archives-3 h3 {
+	background-image: url(images/sidebar-header-icons.png);
+	background-position: 20px -40px;
+}
+
+ol.commentlist  { margin:0; }
+
+ol.commentlist li {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin: 0 0 10px;
+	padding: 18px 20px 18px 20px;
+	position: relative;
+}
+	ol.commentlist li p {	margin: 0 }
+
+		ol.commentlist li img.avatar {
+			float:right;
+			padding:0 10px 0 10px;
+		}
+
+		ol.commentlist li p a { color: #6099ff; }
+		
+	ol.commentlist li ul li {
+		padding: 15px 0px 5px 20px;
+		margin:0;
+	}
+
+ol.commentlist .comment-meta a { color:#999; padding-bottom:5px; }
+ol.commentlist .children { margin:0; }
+
+
+
+/*-------------------------------
+ Post
+-------------------------------*/
+
+.static-page p, .static-page ul, .static-page ol, .static-page table {
+	font-size: 15px !important;
+}
+
+.subpage p, .subpage ul, .subpage ol, .subpage table {
+    font-size: 12px;
+    color: #262626;
+}
+
+h2.title { color: #262626; margin: 0 0 14px 20px; }
+
+.post .title {
+	font-size: 21px;
+}
+
+.post .title a {
+	color: #59341A;
+}
+	.post .title a:hover {
+		color: #BD2507;
+		text-decoration: none;
+	}
+	
+.post-comments, .date {
+    background: url("images/meta-icons.png") no-repeat scroll 0 0 transparent;
+    margin-left: 10px;
+    padding-left: 14px;
+}
+	
+.post-comments {
+	background-position: 0 1px;
+}
+
+.date {
+	background-position: 0 -18px;
+}
+
+div.post { 
+	padding: 5px 0px;
+}
+
+.post p.txt0 {
+    font-size: 11px;
+    margin: 0 0 10px !important;
+}
+
+.post .txt0 a {
+
+}
+	.post .txt0 a:hover {
+
+	}
+	
+.blog .post p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0;
+}
+
+.post-edit-link {
+}
+
+.post.clearfix p {
+	text-align:justify;
+}
+
+.divider {
+    border-top: 2px dashed #3A1B09;
+    clear: both;
+    height: 1px;
+    margin: 20px auto 0;
+    visibility: visible;
+    width: 300px;
+}
+
+.post strong { font-weight: 700;}
+.post em { font-style: italic}
+
+
+.home .post { border-bottom: 1px dashed #777777}
+
+div.post img { border:0px dashed #888888; padding:0; }
+
+.box1 .navigation { padding: 10px 0; }
+
+h2.hd-page {
+	height:45px;
+	line-height:60px;
+	margin:10px 0 30px;
+	text-align:center;
+}
+div.box1 ul.list2 li, div.list3 li {
+	border-bottom:1px dashed #6D0303;
+	line-height:15px;
+	margin:5px auto;
+	padding:8px 0;
+}
+div.list3 .lifestream li { border:none; }
+
+/* Menu Tab */
+
+#nav .page_item.page-item-2 {
+    margin-right: 45%;
+    width: 215px;
+	
+}
+
+#menu-the-bean-official-page #menu-item-251 {
+    margin-left: 2%;
+    margin-right: 45%;
+}
+
+#menu-the-bean-official-page #menu-item-250 {
+	width: 100px;
+}
+
+#menu-the-bean-official-page #menu-item-250 a {
+	width: 100px;
+}
+
+/*------------------------------------------------------------------
+
+3.	FORMS
+	Styles for forms only
+
+--------------------------------------------------------------------
+
+/*-------------------------------
+3.a Form styles
+-------------------------------*/
+
+input.text, select.select, textarea.textarea
+{
+	border: 0;
+	color: #000;
+	padding: 7px;
+}
+input.text { width: 168px }
+select.select { width: 200px }
+textarea.textarea { width: 375px; height: 100px; background-color: #e9eef4 }
+
+button.button {
+	color: #fff;
+	height: auto; width: auto;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+/* General forms */
+form.form {  }
+
+	form.form ol.fieldset {	list-style: none }
+	
+		form.form ol.fieldset li.field {
+			margin: 0 0 13px;
+			position: relative;
+		}
+			form.form ol.fieldset li.field label {
+				position: absolute;
+				top: 5px; left: 195px;
+			}
+			
+	form.form p.submit { margin: 0 }
+	
+	form.form p.submit input { padding: 5px 10px }
+
+
+/* Search forms where button and text input are next to each other  */
+form.search { /* nothing here */ }
+	
+	form.search p.fields { margin: 0 }
+
+		form.search p.fields input, form.search p.fields button {
+			display: inline;
+			vertical-align: middle;
+		}
+
+
+/*-------------------------------
+3.b Individual forms
+-------------------------------*/
+
+form#topSearch {
+	background: url(images/bg-search.png) no-repeat;
+	width: 178px; height: 32px;
+	position: absolute;
+	top: 10px; right: 0;
+}
+	form#topSearch p.fields input {
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		width: 130px;
+		background: none;
+		overflow: hidden;
+		border: none;
+		position: absolute;
+		top: 8px; left: 8px;
+	}
+		form#topSearch p.fields button {
+			background: url(images/ico-search.png) no-repeat;
+			width: 21px; height: 21px;
+			border: none;
+			position: absolute;
+			top: 5px; right: 10px;
+		}
+
+form#comments {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px 30px;
+}
+		
+
+/*------------------------------------------------------------------
+
+4.	PLUGINS
+	Predefined utilities
+
+--------------------------------------------------------------------
+
+/*-------------------------------
+Sidebar Tabber
+-------------------------------*/
+
+ul.idTabs {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+ul.idTabs li {
+	display: inline;
+	margin-right:5px;
+	float:left;
+}
+
+ul.idTabs li a {
+	display:block;
+	float:left;
+	height:16px;
+	margin:0 auto;
+	padding:10px;
+	text-align:left;
+}
+
+ul.idTabs li a.selected, ul.idTabs li a:hover {
+	background: url(images/bg-box.png) repeat !important;
+	background: #111;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-topleft: 6px;
+	-khtml-border-radius: 6px 6px 0 0;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	border-radius: 6px 6px 0 0;	
+}
+#tabs .inside {
+	background: url(images/bg-box.png) repeat !important;
+	background: #111;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+}
+
+#tabs .inside ul li {
+	line-height: 13px;
+	border-bottom: 1px dashed #555;
+	padding: 15px 0;	
+}
+#tabs .inside ul#comm li {
+	background:url(images/ico-6.gif) no-repeat left center;
+	padding-left:28px;
+}
+#tabs .inside ul#pop li {
+	background:url(images/ico-2.gif) no-repeat left center;
+	padding-left:28px;
+}
+
+
+#tagcloud {
+	padding:15px;
+}
+#tabs .inside ul{
+	margin:0;
+	padding:0px 15px 10px 15px !important;
+}
+.home #tabs {
+	width:260px;
+	float:left;
+	margin:24px 0 20px;
+}
+.home div#myfavblog {
+	width:260px;
+	float:right;
+}
+
+
+
+/*-------------------------------
+Widgets
+-------------------------------*/
+
+.widgetized {
+	width:304px;
+}
+
+.widgetized .inside {
+	background: url(images/bg-box.png) repeat !important;
+	background: #111;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-topleft: 6px;
+	-khtml-border-radius: 6px 6px 0 0;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	border-radius: 6px 6px 0 0;	
+}
+
+#flickr-sidebar {
+	background:transparent url(http://thelacproject.com/thebeantest/images/ourphotos.png) no-repeat scroll center 0;
+	margin-bottom:15px;
+}
+
+#flickr-sidebar h3 {
+	display:none;
+}
+
+#twitter-tools {
+	padding:52px 0 0;
+	background:transparent url(http://thelacproject.com/thebeantest/images/ourtweets.png) no-repeat scroll center 0;
+	margin:15px 0 0;
+	width:333px;
+}
+
+#twitter-tools h3 {
+	display:none;
+}
+
+#twitter-tools .aktt_more_updates {
+	border:0;
+}
+
+table#wp-calendar { margin:0 !important; }
+
+#wp-calendar caption {
+	color: #fff;
+	font-weight: normal;
+	font-size: 22px;
+	letter-spacing: -1px;
+	margin: 0 0 10px;
+	font-family: Georgia;
+}
+
+#wp-calendar thead {
+	color: #6099ff;
+	font-weight: bold !important;
+}
+
+#wp-calendar #next, #wp-calendar #prev {
+	padding: 10px 0 0 !important;
+}
+
+/*Flickr Photos*/
+
+#flickr {
+	clear: both;
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+}
+
+	.flickr-photos {
+		margin:0 auto;
+		padding-bottom:0;
+		padding-left:60px;
+		width:780px;
+	}
+	
+		a.more-photos {
+			display:none;
+		}
+		
+			.flickr-photos a img {
+				border:3px solid #402612;
+				margin:23px 2px 12px;
+				padding:4px
+			}
+	
+/*Disqus Commenting*/
+
+.dsq-brlink {
+	font-size:10px;
+	margin-left:50px;
+}
+
+/*Contact Form 7*/
+
+div.wpcf7 {
+	margin:0 auto;
+}
+
+	div.wpcf7 p {
+		margin:10px auto;
+		text-align:left;
+	}
+
+	.wpcf7-form-control-wrap input {
+		-khtml-border-radius:6px;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		border:2px solid #59361C;
+	}
+	
+	.wpcf7-form-control-wrap textarea {
+		-khtml-border-radius:6px;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		border:2px solid #59361C;
+	}
+	
+.wpcf7-mail-sent-ok {
+	-khtml-border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	clear:left;
+	display:block;
+	width:300px;
+}
+	
+#flickr .flickr_badge_image a {
+		float: left;
+		display: inline;
+		margin: 0 16px 15px 0;
+		border: 1px dashed #888;
+		padding: 5px;
+}
+
+#flickr .flickr_badge_image a:hover {
+	border: 1px dashed #fff;
+}
+
+#browseFlickr{
+	background: url(images/bg-flickr.png) no-repeat;
+	width: 91px; height: 11px;
+	margin: 0 25px 10px 12px;
+	float:right;
+}
+#video {
+	padding: 10px;
+}
+
+#sidebar #advert_125x125 { padding:30px 0 20px 30px; margin: 0 0 18px;	}
+#sidebar #advert_125x125 img { margin:0 15px 5px 0; }
+
+#portfolio {
+	clear: both;
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+}
+
+#portfolio a {
+		float: left;
+		display: inline;
+		margin: 0 16px 15px 0;
+		border: 1px dashed #888;
+		padding: 5px;
+}
+
+#portfolio a:hover {
+	border: 1px dashed #fff;
+}
+
+/*Google Form*/
+
+.ss-form-entry {
+	margin-bottom:0;
+}
+
+/*Google Form End*/
+
+/* Sharebar */
+
+#main #sharebar {
+margin-left: -115px !important;
+padding: 5px;
+}
+
+/*-------------------------------
+Lifestream
+-------------------------------*/
+
+.list3 .first, .list3 h5 {
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: 1px dashed #fff;
+}
+
+.list3 .lifestream-icon {
+	float: left;
+	padding: 0 15px 0 0;
+}
+
+.list3 .lifestream-post {
+	font-size: 14px;
+}
+
+.list3 .lifestream-post p {
+	margin: 0 !important;
+}
+
+
+/*-------------------------------
+Utility classes
+-------------------------------*/
+
+.l { text-align: left }
+.c { text-align: center }
+.r { text-align: right }
+.aligncenter { margin: 5px auto 15px auto;	display: block; }
+.alignleft { margin: 5px 15px 5px 0; float: left; }
+.alignright { margin: 5px 0px 5px 15px; float: right; }
+
+.wrap, .col { float: left;	display: inline; position: relative; }
+.wrap { clear: both }
+
+.clear { clear: both }
+.fl { float: left }
+.fr { float: right }
+.hide, .hidden, .anchor, .skip { display: none }
+.nomargin { margin-bottom: 0 !important }
+.noborder { border: 0 !important }
+.top { margin-top: 0 !important }
+
+.replace, .br { display: block; font-size: 1%; line-height: 0; text-align: left; text-indent: -10000px; }
+
+.hr { background: #ccc; height: 1px; margin: 1.5em 0 }
+.hr hr { display: none }
+
+
+/*-------------------------------
+Clearfix
+-------------------------------*/
+
+.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.clearfix { display: block }
+.fix{ clear: both; height: 1px; margin: -1px 0 0; overflow: hidden; }
+
+
+/*-------------------------------
+Social Media
+-------------------------------*/
+
+.social-media {
+	margin: 10px 0 0 !important; 
+	height: 25px;
+	padding: 0 !important;
+	width: 500px;
+}
+
+	.social-media li {
+		list-style: none;
+		float: left;
+		list-style: none !important;
+	}
+	
+	.social-media li.facebook-share {
+		width: 150px;
+	}
+	
+	.social-media li.twitter-tweet {
+		height:20px;
+		margin-top:1px !important;
+	}
+	
+	.social-media li.evernote-clip {
+		 margin:2px 0 0 -3px !important;
+		 width:51px;
+		 height:20px;
+	}
+	
+	.social-media li.facebook-like, .social-media li.facebook-like-face {
+		margin-left:0 !important;
+	}
+	
+	.social-media li.facebook-like-face {
+		
+	}
+	
+	.social-media li.facebook-like {
+		height: 23px;
+	}
+	
+		.social-media li.facebook-like iframe {
+			height: 23px !important;
+		}
+		
+	.social-media li.sharethis-count {
+		float: right;
+	}
+	
+	.social-media li.stumble-upon {
+		margin-right: 10px;
+		padding-top: 3px;
+	}
+	
+	.social-media li.facebook-send {
+		height: 20px;
+		margin-right: 15px;
+		margin-top: 2px;
+	}
+	
+	.social-media li.google-plusone {
+		height: 20px;
+		margin-right: 0;
+	}
+	
+	
+	
+/*-------------------------------
+ Social Icons
+-------------------------------*/
+
+.social-media-buttons {
+    height: 100px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.widget .social-media-buttons li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 3px 0 0;
+    padding: 0;
+    width: 105px;
+}
+
+.social-media-buttons li a {
+    background: url("images/social-icons.png") no-repeat scroll 0 0 transparent !important;
+    display: block;
+    height: 70px;
+    padding: 0 !important;
+    width: 105px;
+}
+
+.social-media-buttons li a:hover {
+    background-color: transparent !important;
+}
+
+.social-media-buttons li.follow-us a {
+    background-position: 0 0;
+}
+	#sidebar .social-media-buttons li.follow-us a:hover {
+		background-position: 0px -80px !important;
+	}
+
+.social-media-buttons li.like-us a {
+    background-position: -127px 0 !important;
+}
+	#sidebar .social-media-buttons li.like-us a:hover {
+		background-position: -127px -80px !important;
+	}
+
+.like-us {
+	margin: 0 0 0 10px !important;
+}
+
+	
+	
+/*-------------------------------
+Facebook Comments
+-------------------------------*/
+
+.fb_iframe_widget {
+    display: block !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fb-like iframe, .fb-like {
+	width: 150px !important;
+}
+
+
+
+/*-------------------------------------------------
+			Mailchimp
+-------------------------------------------------*/
+
+#mc_embed_signup, #mc_embed_signup-1 {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 auto 0 !important;
+    width: 722px;
+}
+
+#mc_embed_signup-1 {
+	width: 860px;
+}
+
+	#mc_embed_signup label, #mc_embed_signup-1 label {
+		font-family: bebas-neue, sans-serif;
+		color: #000 !important;
+		text-transform: uppercase;
+	}
+	#mc_embed_signup input, #mc_embed_signup-1 input { 
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		background: #EEEEEE;
+		margin: 0 auto !important; 
+		border: 2px solid #666666;
+		width: 94% !important;
+		height: 33px;
+	}
+	#mc_embed_signup .mc-field-group, #mc_embed_signup-1 .mc-field-group { 
+		margin: 0 0 10px !important; 
+		clear: none !important; 
+		float: left !important;
+		width: 263px;
+	}
+	
+	#mc_embed_signup-1 .mc-field-group { 
+		width: 353px;
+	}
+	
+	#mc_embed_signup.rss-email, #mc_embed_signup-1.rss-email { 
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		width: 100%; 
+		margin-left: 36px;
+	}
+		
+#mc_embed_signup fieldset, #mc_embed_signup-1 fieldset {
+	background-color: transparent !important;
+	border: 0 !important;
+	padding-top: 0 !important;
+}
+
+	.mc-field-group label {
+		font-size:14px;
+	}
+
+	.mc-field-group input {
+		font-size:20px;
+	}
+	
+	#mc_embed_signup #mc-embedded-subscribe, #mc_embed_signup-1 #mc-embedded-subscribe {
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		background: url("images/the-bean-fights-back/sign-up.png") no-repeat scroll 0 0 transparent;
+		border: 0 none !important;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 21px;
+		height: 45px;
+		padding: 0;
+		width: 156px !important;
+	}
+		#mc-embedded-subscribe:hover { background-position: 0 -50px !important; }
+			
+		.email-rss:hover,
+		.mc-embedded-subscribe:hover {
+			background:#cccccc;
+			border: 1px solid #999;
+		}
+		
+.mce_inline_error {
+    color: red !important;
+    float: left;
+    font-weight: bold;
+    margin: 1em 0 0;
+    padding: 0 0 0 10px !important;
+    width: 80%;
+    z-index: 1;
+}
+
+#mce-responses {
+	display: none;
+}
+
+	
+#mc_embed_signup .inactive{
+	color:#999;
+	}	 
+#mc_embed_signup .active{
+	color:#333;
+	}	 		
+#mc_embed_signup .focused{
+	color:#333;
+	background:#fffee7;
+	}	 
+	
+#nav li#menu-item-253, #nav li#menu-item-253 a {
+	width: 98px;
+}

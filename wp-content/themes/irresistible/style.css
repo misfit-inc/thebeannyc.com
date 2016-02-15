@@ -674,96 +674,55 @@ ul.nav { margin: 0 }
 	left:0;
 	margin:112px auto 20px;
 	position:relative;
-	width:580px;
+	z-index:1;
+	width: 790px;
 }
 
 	#nav, #nav ul {
 		line-height:1;
 		list-style:none outside none;
 		padding:0;
-		width:790px;
-		z-index:1;
+	}
+	
+	.nav-lsm,
+	.nav-rsm {
+		overflow: hidden;
+		margin: 0;
+	}
+	
+	.nav-lsm {
+		float: left;
+	}
+	
+	.nav-rsm {
+		float: right;
 	}
 	
 		#nav li {
 			float:left;
 			line-height:15px;
 			margin:0 5px;
-			width:60px;
+			min-width: 60px;
 		}
 		
-			#nav li.page_item.page-item-67 {
-				margin-right:375px;
-			}
-		
-			#nav li:hover {
-			}
+		#nav li a {
+			color:#fbdccd;
+			font-size:15px;
+			text-align:center;
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			text-transform:uppercase;
+			display: block;
+			text-decoration: none;
+			padding-top: 70px;
+		}
+			#nav li#menu-item-19 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
+			#nav li#menu-item-18 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
+			#nav li#menu-item-17 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
 			
-			#nav li a {
-				color:#fbdccd;
-				font-size:15px;
-				text-align:center;
-				font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-				text-transform:uppercase;
-				display: block;
-				text-decoration: none;
-				padding-top: 70px;
-			}
+			#nav li#menu-item-22 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
+			#nav li#menu-item-21 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
+			#nav li#menu-item-20 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
 			
-				#nav li#menu-item-251 a:hover {	
-					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -168px;
-				}
-				
-						#nav li.current_page_item.page-item-41 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -168px;
-						}
-				
-				#nav li#menu-item-250 a:hover {	
-					background: url("../../../images/nav-icons.png") no-repeat scroll center 23px transparent;
-				}
-				
-					#nav li.current_page_item.page-item-2 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 8px 23px;
-						}
-								
-				#nav li.page_item.page-item-6 a:hover {	
-					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -41px;
-				}
-				
-					#nav li.current_page_item.page-item-6 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 3px -41px;
-						}
-								
-				#nav li.page_item.page-item-67 a:hover {	
-					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -106px;
-				}
-				
-					#nav li.current_page_item.page-item-67 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -106px;
-						}
-								
-				#nav li#menu-item-252 a:hover {	
-					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -234px;
-				}
-				
-					#nav li.current_page_item.page-item-16 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 5px -234px;
-						}
-								
-				#nav li#menu-item-253 a:hover {	
-					background: transparent url(../../../images/nav-icons.png) no-repeat scroll 26px -300px;
-				}
-				
-					#nav li.current_page_item.page-item-10 a {
-							background: transparent url(../../../images/nav-icons.png) no-repeat scroll 26px -300px;
-						}
-						
-				#nav li#menu-item-286 a:hover {background: url(../../../images/nav-icons2.png) no-repeat scroll 8px 23px transparent;}
-						
-				#nav li.current_page_item a:hover {
-					background:#ffffff;
-				}
-				
 /* Style drop down list */
 
 #nav li ul {
@@ -1119,26 +1078,6 @@ div.box1 ul.list2 li, div.list3 li {
 }
 div.list3 .lifestream li { border:none; }
 
-/* Menu Tab */
-
-#nav .page_item.page-item-2 {
-    margin-right: 45%;
-    width: 215px;
-	
-}
-
-#menu-the-bean-official-page #menu-item-251 {
-    margin-left: 2%;
-    margin-right: 45%;
-}
-
-#menu-the-bean-official-page #menu-item-250 {
-	width: 100px;
-}
-
-#menu-the-bean-official-page #menu-item-250 a {
-	width: 100px;
-}
 
 /*------------------------------------------------------------------
 
@@ -1340,7 +1279,7 @@ Widgets
 }
 
 #flickr-sidebar {
-	background:transparent url(http://thelacproject.com/thebeantest/images/ourphotos.png) no-repeat scroll center 0;
+	background:transparent url(../../../images/ourphotos.png) no-repeat scroll center 0;
 	margin-bottom:15px;
 }
 
@@ -1350,7 +1289,7 @@ Widgets
 
 #twitter-tools {
 	padding:52px 0 0;
-	background:transparent url(http://thelacproject.com/thebeantest/images/ourtweets.png) no-repeat scroll center 0;
+	background:transparent url(../../../images/ourtweets.png) no-repeat scroll center 0;
 	margin:15px 0 0;
 	width:333px;
 }
@@ -1451,13 +1390,24 @@ div.wpcf7 {
 	display:block;
 	width:300px;
 }
-	
+
+#flickr {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.flickr_badge_image {
+	display: inline-block;
+	overflow: hidden;
+}
+
 #flickr .flickr_badge_image a {
-		float: left;
-		display: inline;
-		margin: 0 16px 15px 0;
-		border: 1px dashed #888;
-		padding: 5px;
+	float: left;
+	display: inline-block;
+	margin: 8px;
+	border: 1px dashed #888;
+	padding: 5px;
 }
 
 #flickr .flickr_badge_image a:hover {

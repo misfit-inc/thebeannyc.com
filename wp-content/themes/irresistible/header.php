@@ -70,10 +70,24 @@
         </div>
     
         <ul id="nav" class="nav">
-
-            <?php if (get_option('woo_nav') == 'true' ) wp_list_pages('sort_column=menu_order&depth=1&title_li=&include=41,2,6,67,16,10'); ?>
+		
+			<?php 
+				$argsNav1 = array(
+					'menu' => 'Left Side Menu',
+					'menu_class' => 'nav-menu nav-lsm',
+					'container' => '',
+				);
+				wp_nav_menu($argsNav1);
+			?>
 			
-			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+			<?php 
+				$argsNav2 = array(
+					'menu' => 'Right Side Menu',
+					'menu_class' => 'nav-menu nav-rsm',
+					'container' => '',
+				);
+				wp_nav_menu($argsNav2);
+			?>
 
         </ul>
         

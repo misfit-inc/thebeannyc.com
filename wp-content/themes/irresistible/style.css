@@ -715,13 +715,13 @@ ul.nav { margin: 0 }
 			text-decoration: none;
 			padding-top: 70px;
 		}
-			#nav li#menu-item-19 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
-			#nav li#menu-item-18 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
-			#nav li#menu-item-17 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
+			#nav li#menu-item-17 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
+			#nav li#menu-item-16 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
+			#nav li#menu-item-15 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
 			
-			#nav li#menu-item-22 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
-			#nav li#menu-item-21 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
-			#nav li#menu-item-20 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
+			#nav li#menu-item-20 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
+			#nav li#menu-item-19 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
+			#nav li#menu-item-18 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
 			
 /* Style drop down list */
 
@@ -1774,3 +1774,30 @@ Facebook Comments
 #nav li#menu-item-253, #nav li#menu-item-253 a {
 	width: 98px;
 }
+
+/* BAKERY */
+
+.bakedgoods {
+	overflow: hidden;
+	margin: 10px auto 0;
+	width: 490px;
+}
+
+.bakedgoods img {
+	display: block;
+	width: 240px;
+	margin-bottom: 10px;
+}
+	.bakedgoods img.last { margin-bottom: 0;}
+
+.bakeleft {
+	float: left;
+	margin-right: 10px;
+}
+
+.bakeright { float: right;}
+
+
+
+
+

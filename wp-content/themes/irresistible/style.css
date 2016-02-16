@@ -22,7 +22,7 @@ table { border-collapse: collapse; border-spacing: 0; width: 100%; }
 address, caption, cite, code, dfn, em, strong, var { font-style: normal; font-weight: normal; }
 caption { text-align: left }
 q:before, q:after, blockquote:before, blockquote:after { content: '' }
-input, select, textarea, button { font-size: 1em; line-height: normal; width: auto; }
+input, select, textarea, button { font-size: 1em; line-height: normal; width: auto; box-sizing: border-box;}
 input, select { vertical-align: middle }
 textarea { height: auto; overflow: auto; }
 option { padding-left: 0.6em }
@@ -1391,6 +1391,43 @@ div.wpcf7 {
 	width:300px;
 }
 
+.wpcf7 input, .wpcf7 select,
+.wpcf7 textarea, .wpcf7 button { width: 100%;}
+
+.wpcf7 input, .wpcf7 textarea {
+	font-size: 14px;
+	padding: 10px;
+}
+
+.wpcf7 input[type="submit"] {
+	border: 0 none;
+	border-radius: 6px;
+	background-color: #59361C;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+}
+	.wpcf7 input[type="submit"]:hover { background-color: #8B542C;}
+
+.wpcf7 .wpf-label {
+	margin-bottom: 10px;
+}
+
+.wpcf7 .wpf-label p {
+	color: #59361C;
+	margin: 0 0 5px;
+}
+.wpcf7 .wpf-label p span {
+	font-family: inherit;
+	font-size: inherit;
+	color: #ff0000;
+}
+
+
+
+
 #flickr {
 	width: 980px;
 	margin: 0 auto;
@@ -1775,27 +1812,102 @@ Facebook Comments
 	width: 98px;
 }
 
-/* BAKERY */
+
+/* About Page */
+
+.page-id-9 p {
+	color: #59361c;
+	font-size: 16px !important;
+}
+
+
+/* Contact Page */
+
+.conbox { overflow: hidden;}
+.conleft { float: left; width: 45%;}
+.conright { float: right; width: 50%;}
+
+
+/* Bakery Page */
 
 .bakedgoods {
 	overflow: hidden;
 	margin: 10px auto 0;
-	width: 490px;
 }
+
+.bakebox {
+	float: left;
+	width: 50%;
+	margin-bottom: 2px;
+}
+	.bakebox.last { margin-bottom: 0;}
 
 .bakedgoods img {
 	display: block;
-	width: 240px;
-	margin-bottom: 10px;
-}
-	.bakedgoods img.last { margin-bottom: 0;}
-
-.bakeleft {
-	float: left;
-	margin-right: 10px;
+	width: 100%;
+	height: auto;
 }
 
-.bakeright { float: right;}
+.bakeleft { padding-right: 1px;}
+.bakeright { padding-left: 1px;}
+
+
+/* .menuentry */
+
+.menuentry .menup {
+	font-weight: bold;
+	font-size: 18px !important;
+	line-height: 1.2;
+	max-width: 600px;
+	margin: 0 auto 30px;
+	text-align: center !important;
+}
+
+.menuentry h1,
+.menuentry h2,
+.menuentry p,
+.menuentry li {
+	color: #59361c;
+}
+
+.menuentry h1 { font-size: 40px;}
+.menuentry h2 { font-size: 20px;}
+
+.menuentry ul,
+.menuentry li {
+	list-style: none !important;
+	padding: 0 !important;
+}
+	.menuentry li { font-weight: bold;}
+
+.menulist { overflow: hidden;}
+
+.menubox { width: 44%; margin-left: 4%;}
+.menubox.full { width: auto;}
+
+.menubox.left { float: left;}
+.menubox.right { float: right;}
+
+.mbrecipe p {
+	width: 95%;
+	margin: 0;
+	text-align: left !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

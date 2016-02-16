@@ -50,7 +50,7 @@
 
 </head>
 
-<body id="woothemes">
+<body id="woothemes" <?php body_class(); ?>>
 
 <!--	<!?php if (is_front_page()) { ?>
 	

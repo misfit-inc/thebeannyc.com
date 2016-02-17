@@ -649,6 +649,7 @@ The Bean Fights Back Page (END)
 			position:absolute;
 			top:-80px;
 			width:170px;
+			z-index: 1;
 		}
 	
 		#footerWrap h3 {
@@ -715,13 +716,23 @@ ul.nav { margin: 0 }
 			text-decoration: none;
 			padding-top: 70px;
 		}
-			#nav li#menu-item-17 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
-			#nav li#menu-item-16 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
-			#nav li#menu-item-15 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
+			#nav li#menu-item-17 a:hover,
+			#nav li#menu-item-17.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
 			
-			#nav li#menu-item-20 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
-			#nav li#menu-item-19 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
-			#nav li#menu-item-18 a:hover { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
+			#nav li#menu-item-16 a:hover,
+			#nav li#menu-item-16.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
+			
+			#nav li#menu-item-15 a:hover,
+			#nav li#menu-item-15.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
+			
+			#nav li#menu-item-20 a:hover,
+			#nav li#menu-item-20.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
+			
+			#nav li#menu-item-19 a:hover,
+			#nav li#menu-item-19.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
+			
+			#nav li#menu-item-18 a:hover,
+			#nav li#menu-item-18.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
 			
 /* Style drop down list */
 
@@ -1862,6 +1873,7 @@ Facebook Comments
 	margin: 0 auto 30px;
 	text-align: center !important;
 }
+	.page-id-2 .menuentry .menup { max-width: 800px;}
 
 .menuentry h1,
 .menuentry h2,
@@ -1896,12 +1908,63 @@ Facebook Comments
 
 
 
+/* instabean */
 
+.instafull,
+.instahit .one, .instahit .two,
+.instahitfull {
+	opacity: 1;
+	
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+	.instafull:hover,
+	.instahit .one:hover, .instahit .two:hover,
+	.instahitfull:hover { opacity: 0.8;}
 
+.beangrams {
+	max-width: 800px;
+	padding: 10px;
+	margin: 10px auto;
+}
 
+#instabean {
+	background-color: #fff;
+	padding: 2px;
+}
 
+.instalink {
+	height: 100%;
+	width: 100%;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
+.instafull, .instaside div {
+	background: none no-repeat scroll center center transparent;
+	background-size: cover;
+	position: relative;
+}
 
+.instafull, .instahitfull {
+	height: 400px;
+}
+
+.instafull, .instaside { margin-bottom: 2px;}
+.instafull.last { margin-bottom: 0;}
+
+.instahit, .instahitfull { width: calc(50% - 1px);}
+
+.instaside { overflow: hidden;}
+.instaside .one { height: 199px; margin-bottom: 2px;}
+.instaside .two { height: 199px;}
+
+.instaside.left .instahit { float: left;}
+.instaside.left .instahitfull { float: right;}
 
 
 

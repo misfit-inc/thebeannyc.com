@@ -618,45 +618,77 @@ The Bean Fights Back Page (END)
 
 #credits {
 	width:980px;
-	margin:0 auto;
+	padding: 20px 0 0;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-	#credits p {
-		color:#FBDCCD;
-		margin-top: 50px;
-	}
-	
-	#credits p a {
-		color:#DDB86A; 
-		text-decoration: none;
-	}
-		#credits p a:hover {
-			text-decoration: underline;
-		}
+.findbean { text-align: center;}
+.findbean span { color: #fff;}
+.loco { display: inline-block;}
 
-	#footerWrap {
-		background:transparent url(../../../images/cardboard.jpg) repeat scroll center top;
-		color:#DADADA;
-		margin:40px auto 0;
-		position:relative;
-		width:100%;
-	}
+.loco span.dot {
+	display: inline-block;
+	height: 13px;
+	width: 5px;
 	
-		#coffeewarning {
-			background:transparent url(../../../images/warning-photostream.png) no-repeat scroll 0 0;
-			height:214px;
-			margin-left:-17px;
-			position:absolute;
-			top:-80px;
-			width:170px;
-			z-index: 1;
-		}
+	position: relative;
+}
+.loco span.dot:before {
+	background-color: #DDB86A;
+	display: block;
+	content: '';
+	border-radius: 50%;
 	
-		#footerWrap h3 {
-			display:none;
-		}
+	height: 5px;
+	width: 5px;
 	
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -3px;
+}
+
+.loco .highlight:hover {
+	text-decoration: underline;
+}
+
+.copyrights p {
+	color:#FBDCCD;
+	margin: 30px 27px 20px;
+}
+
+.copyrights p a {
+	color:#DDB86A; 
+	text-decoration: none;
+}
+.copyrights p a:hover { text-decoration: underline;}
+
+
+#footerWrap {
+	background:transparent url(../../../images/cardboard.jpg) repeat scroll center top;
+	color:#DADADA;
+	width:100%;
+	margin:40px auto 0;
 	
+	position:relative;
+}
+#footerWrap h3 { display:none;}
+
+
+#coffeewarning {
+	background:transparent url(../../../images/warning-photostream.png) no-repeat scroll 0 0;
+	height:214px;
+	width:170px;
+	margin-left:-17px;
+	
+	position:absolute;
+	top:-80px;
+	z-index: 1;
+}
+
+
+
 /* Fix Footer Position */
 html, body, * html #wrap {height: 100%;}
 #footer {margin-top: -105px; bottom: -7px }
@@ -1845,22 +1877,27 @@ Facebook Comments
 	overflow: hidden;
 	margin: 10px auto 0;
 }
+.bakedgoods .gallery { display: none;}
 
-.bakebox {
-	float: left;
-	width: 50%;
-	margin-bottom: 2px;
-}
-	.bakebox.last { margin-bottom: 0;}
-
-.bakedgoods img {
-	display: block;
-	width: 100%;
-	height: auto;
+.ovenfresh div {
+	background: none no-repeat scroll 0 0 transparent;
+	background-size: cover;
 }
 
-.bakeleft { padding-right: 1px;}
-.bakeright { padding-left: 1px;}
+.cupcakefull, .muffinfull { height: 400px;}
+.cupcakefull, .cupcakehalf { margin-bottom: 2px;}
+.cupcakefull.last, .cupcakehalf.last { margin-bottom: 0;}
+
+.cupcakehalf { overflow: hidden;}
+.cupcakehalf.left .muffinhalf { float: left;}
+.cupcakehalf.left .muffinfull { float: right;}
+.muffinhalf, .muffinfull { width: calc(50% - 1px);}
+
+.muffinhalf .one { height: 199px; margin-bottom: 2px;}
+.muffinhalf .two { height: 199px;}
+
+
+
 
 
 /* .menuentry */
@@ -1907,8 +1944,48 @@ Facebook Comments
 }
 
 
-
 /* instabean */
+
+.instabean {
+	overflow: hidden;
+	margin-left: 105px;
+	
+	position: relative;
+	z-index: 1;
+}
+
+.instabox {
+	float: left;
+	width: calc(12.5% - 22px);
+	border: 1px dashed #999;
+	padding: 5px;
+	margin: 10px 5px;
+}
+
+.instabox a {
+	background-color: #fff;
+	display: block;
+}
+
+.instabox img {
+	display: block;
+	max-width: 100%;
+	
+	opacity: 1;
+	
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+.instabox a:hover img { opacity: 0.8;}
+
+
+
+
+/* ??? */
+
+/*
 
 .instafull,
 .instahit .one, .instahit .two,
@@ -1966,7 +2043,7 @@ Facebook Comments
 .instaside.left .instahit { float: left;}
 .instaside.left .instahitfull { float: right;}
 
-
+*/
 
 
 

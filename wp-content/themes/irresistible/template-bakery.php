@@ -6,9 +6,7 @@ global $post;
 get_header();?>
 
     <div id="content" class="subpage">
-	
-	<div class="lshadow">
-	<div class="rshadow">
+	<div class="container">
 	
 	<div id="main" class="subpage static-page">
 	
@@ -99,11 +97,9 @@ get_header();?>
 	</div>
 	</div>
 	
-	</div><!-- / #main -->
+	</div><!-- // #main -->
 	
-	</div>
-	</div>
-	
-	</div><!-- / #content -->
+	</div><!-- // .container -->
+	</div><!-- // #content -->
     
 <?php get_footer(); ?>

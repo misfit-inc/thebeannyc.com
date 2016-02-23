@@ -150,290 +150,268 @@ blockquote {
 	position: relative;
 }
 
-	#header, #content, #footer {
-		float: left; display: inline;
-		clear: both;
-		position: relative;
-	}
-	
-	.rays {
-		background:transparent url(../../../images/top-left-rays.png) repeat-x scroll center top;
-		width:214px;
-		height:184px;
-		position:absolute;
-		float:left;
-		z-index:1;
-	}
+.container {
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
 
-	#header {
-		width:100%;
-		background:transparent url(../../../images/header-background.png) repeat-x scroll center top;
-		margin-top:20px;
-		padding-bottom: 15px;
-	}
-	
-		#header span img {
-			float:right;
-			margin-right:-11px;
-			margin-top:-11px;
-		}
-		
-			.beansteam {
-				background:transparent url(../../../images/bean-steam.png) no-repeat scroll 0 0;
-				height:116px;
-				margin:0 auto -115px;
-				width:746px;
-				z-index:2;
-			}
-			
-			#logo { 
-				background:transparent url(../../../images/the-bean-logo.png) no-repeat scroll 0 0;
-				height:356px;
-				margin:-145px auto 0;
-				width:382px;
-				z-index:1;
-			}
-	
-				#logo a {
-					cursor:pointer;
-					display:block;
-					height:325px;
-					position:relative;
-					width:385px;
-					z-index:3;
-				}
-				
-			.pssst {
-				background:transparent url(../../../images/pssst.png) no-repeat scroll 0 0;
-				height:60px;
-				margin:-22px auto 0;
-				width:887px;
-			}
-			
-	#content {
-		margin-top:-11px;
-		padding:0 0 100px;
-		width:100%;
-	}
-	
-		#content.homepg {
-			background:transparent url(../../../images/main-background.png) repeat-x scroll center 0;
-		}
-				
-		#content.subpage {
-			background:#fbdccd;
-			margin:0 auto;
-		}
-		
-		.lshadow {
-			background:transparent url(../../../images/subpage-left-shadow.png) repeat-y scroll left 0;
-			margin:0 auto;
-			padding-left:60px;
-			width:900px;
-		}
-		
-		.rshadow {
-			background:transparent url(../../../images/subpage-right-shadow.png) repeat-y scroll right 0;
-			padding-right:0;
-			width:900px;
-		}
-	
-		#main {
-			width: 900px;
-			background:transparent;
-			margin-bottom:-22px;
-			margin-left:-30px;
-			margin-top:0;
-		}
-		
-			#main .innerbox {
-				-moz-border-radius: 6px;
-				-khtml-border-radius: 6px;
-				-webkit-border-radius: 6px;
-				border-radius: 6px;
-				border:4px dashed #59361c;
-				margin:10px 0;
-				padding:0 10px 10px;
-			}
-			
-				#main .innerbox p {
-					margin:9px 0;
-				}
-			
-				#main .innerbox h4, #main .innerbox p, #main .innerbox h1, #main .innerbox h2, #main .innerbox h3 {
-					margin-left:30px;
-					color:#59361c;
-				}
+#content.subpage .container {
+	max-width: 900px;
+}
 
-			#main.subpage {
-				background:#FFFFFF none repeat scroll 0 0;
-				margin-bottom:-22px;
-				margin-left:-30px;
-				margin-top:0;
-				padding-bottom: 70px;
-				padding-top: 20px;
-				overflow: auto;
-			}
-		
-			#main.homepg {
-				height:535px;
-				margin:0 auto;
-				width:980px;
-				padding-top:12px;
-			}
-			
-				.wehave {
-					background:transparent url("../../../images/we-have.png") no-repeat scroll 0 0;
-					float:left;
-					height:195px;
-					margin-top:175px;
-					width:312px;
-					margin-left:20px;
-				}
-				
-				.donthave {
-					background:transparent url("../../../images/we-dont-have.png") no-repeat scroll 0 0;
-					float:right;
-					height:198px;
-					margin-top:175px;
-					width:317px;
-				}
-				
-				.sugarjar {
-					background:url("../../../images/sugar-jar.png") no-repeat scroll 0 0 transparent;
-					height:469px;
-					margin-left:-30px;
-					margin-top:110px;
-					width:332px;
-				}
-				
-				.twitter {
-					background:url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 -115px transparent;
-					height:114px;
-					margin:0 0 -50px 230px;
-					width:180px;
-				}
-				
-					.twitter a {
-						display:block;
-						height:114px;
-						width:180px;
-					}
-				
-					.twitter:hover {
-						background:url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 0 transparent;
-					}
-				
-				.foursquare {
-					background:url("../../../images/four-square-sugar.png") no-repeat scroll 0 0 transparent;
-					height:70px;
-					margin:0 0 -66px 88px;
-					width:80px;
-				}
-				
-					.foursquare a {
-						display:block;
-						height:70px;
-						width:80px;
-					}
-				
-					.foursquare:hover {
-							background:url("../../../images/four-square-sugar.png") no-repeat scroll 0 -70px transparent;
-						}
-				
-				.facebook {
-					background:url("../../../images/facebook-sugar.png") no-repeat scroll 0 0 transparent;
-					height:69px;
-					margin:0 0 -136px -30px;
-					width:80px;
-				}
-				
-					.facebook a {
-						display:block;
-						height:69px;
-						width:80px;
-					}
-				
-					.facebook:hover {
-						background:url("../../../images/facebook-sugar.png") no-repeat scroll 0 -69px transparent;
-					}
-				
-				.tumblr {
-					background:url("../../../images/tumblr-sugar.png") no-repeat scroll 0 0 transparent;
-					height:70px;
-					margin:0 0 -60px 32px;
-					width:80px;
-				}
-				
-					.tumblr a {
-						display:block;
-						height:70px;
-						width:80px;
-					}
-				
-					.tumblr:hover {
-							background:url("../../../images/tumblr-sugar.png") no-repeat scroll 0 -70px transparent;
-						}
-				
-				.yelp {
-					background:url("../../../images/yelp-sugar.png") no-repeat scroll 0 0 transparent;
-					height:71px;
-					margin:0 0 -69px 146px;
-					width:80px;
-				}
-				
-					.yelp a {
-						display:block;
-						height:71px;
-						width:80px;
-					}
-				
-					.yelp:hover {
-						background:url("../../../images/yelp-sugar.png") no-repeat scroll 0 -71px transparent;
-					}
-				
-				.pinterest {
-					background: url("images/pinterestsugar.png") no-repeat scroll 0 -127px transparent;
-					height: 81px;
-					margin: 0 0 -78px 54px;
-					width: 86px;
-				}
-				
-					.pinterest a {
-						display:block;
-						height: 70px;
-						width: 86px;
-					}
-					
-					.pinterest:hover {
-						background: url("images/pinterestsugar.png") no-repeat scroll 0 0 transparent;
-					}
-				
-				.instagram {
-					background: url("images/instagramsugar.png") no-repeat scroll 0 -110px transparent;
-					height: 77px;
-					margin: 0 0 -33px -12px;
-					width: 85px;
-				}
-				
-					.instagram a {
-						display:block;
-						height: 77px;
-						width: 86px;
-					}
-					
-					.instagram:hover {
-						background: url("images/instagramsugar.png") no-repeat scroll 0 0 transparent;
-					}
-				
-	.comments {
-		width: 980px;
-		margin: 0 auto;
-	}
+
+/* HEADER */
+
+#header {
+	background: transparent url(../../../images/header-background.png) repeat-x scroll center top;
+	padding: 30px 0 20px;
+}
+
+#header span img {
+	float: right;
+	margin-right: -11px;
+	margin-top: -11px;
+}
+
+.rays {
+	display: none;
 	
-	.bottom-content {
-		background: #fff;
-	}
+	background: transparent url(../../../images/top-left-rays.png) repeat-x scroll center top;
+	width: 214px;
+	height: 184px;
+	
+	position: absolute;
+	z-index: 1;
+}
+
+.beansteam img,
+#logo img {
+	max-width: 100%;
+}
+
+.beansteam {
+	height: 116px;
+	width: 746px;
+	margin: 0 auto;
+}
+
+#logo {
+	margin-top: -80px;
+}
+	
+#logo a {
+	display: block;
+	height: 325px;
+	width: 385px;
+	margin: 0 auto;
+}
+
+.pssst {
+	background: transparent url(../../../images/pssst.png) no-repeat scroll 0 0;
+	height: 60px;
+	margin: -22px auto 0;
+	width: 887px;
+}
+
+
+
+/* CONTENT */
+
+#content {
+	box-shadow: 0 0 5px 5px rgba(33,33,33,0.3);
+}
+
+/* CONTENT - HOMEPAGE */
+
+#content.homepg {
+	background: transparent url(../../../images/main-background2.png) repeat scroll center 0;
+	min-height: 600px;
+}
+
+.whatwe { overflow: hidden;}
+.whatwe div { padding: 200px 0 100px;}
+.whatwe .left { float: left;}
+.whatwe .right { float: right;}
+
+.whatwe h2 {
+	color: #412713;
+	font-size: 42px;
+	line-height: 1;
+	letter-spacing: -3px;
+	
+	border-bottom: 2px dashed #9D816F;
+	padding-bottom: 10px;
+	margin: 0 0 7px;
+}
+
+.whatwe p {
+	color: #412713;
+	font-size: 30px;
+	line-height: 1;
+	margin: 0 0 7px;
+}
+
+
+.sugarjarcon {
+	position: absolute;
+	left: 50%;
+	margin-left: -166px;
+}
+
+.sugarjar {
+	background: url("../../../images/sugar-jar.png") no-repeat scroll 0 0 transparent;
+	height: 354px;
+	width: 304px;
+	
+	position: relative;
+	z-index: 10;
+}
+
+.thesugars {
+	position: relative;
+	height: 175px;
+}
+
+.thesugars div {
+	position: absolute;
+}
+
+.thesugars div a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.facebook {
+	background: url("../../../images/facebook-sugar.png") no-repeat scroll 0 0 transparent;
+	height: 69px;
+	width: 80px;
+	
+	bottom: -27px;
+}
+	.facebook:hover { background: url("../../../images/facebook-sugar.png") no-repeat scroll 0 -69px transparent;}
+
+.tumblr {
+	background: url("../../../images/tumblr-sugar.png") no-repeat scroll 0 0 transparent;
+	height: 70px;
+	width: 80px;
+	
+	left: 60px;
+	bottom: -19px;
+}
+	.tumblr:hover { background: url("../../../images/tumblr-sugar.png") no-repeat scroll 0 -70px transparent;}
+
+.foursquare {
+	background: url("../../../images/four-square-sugar.png") no-repeat scroll 0 0 transparent;
+	height: 70px;
+	width: 80px;
+	
+	left: 116px;
+	bottom: -12px;
+}
+	.foursquare:hover { background: url("../../../images/four-square-sugar.png") no-repeat scroll 0 -70px transparent;}
+
+.yelp {
+	background: url("../../../images/yelp-sugar.png") no-repeat scroll 0 0 transparent;
+	height: 71px;
+	width: 80px;
+	
+	left: 176px;
+	bottom: -15px;
+}
+	.yelp:hover { background: url("../../../images/yelp-sugar.png") no-repeat scroll 0 -71px transparent;}
+
+.instagram {
+	background: url("images/instagramsugar.png") no-repeat scroll 0 -110px transparent;
+	height: 77px;
+	width: 85px;
+	
+	left: 14px;
+	bottom: 25px;
+}
+	.instagram:hover { background: url("images/instagramsugar.png") no-repeat scroll 0 0 transparent;}
+
+.pinterest {
+	background:  url("images/pinterestsugar.png") no-repeat scroll 0 -127px transparent;
+	height: 81px;
+	width: 86px;
+	
+	left: 77px;
+	bottom: 24px;
+}
+	.pinterest:hover { background: url("images/pinterestsugar.png") no-repeat scroll 0 0 transparent;}
+
+.twitter {
+	background: url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 -115px transparent;
+	height: 114px;
+	width: 180px;
+	
+	right: -75px;
+	top: 0;
+}
+	.twitter:hover { background: url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 0 transparent;}
+
+
+
+
+/* CONTENT - SUBPAGES */
+
+#content.subpage {
+	background: #fbdccd;
+	margin: 0 auto;
+}
+
+.lshadow {
+	background: transparent url(../../../images/subpage-left-shadow.png) repeat-y scroll left 0;
+	margin: 0 auto;
+	padding-left: 60px;
+	width: 900px;
+}
+
+.rshadow {
+	background: transparent url(../../../images/subpage-right-shadow.png) repeat-y scroll right 0;
+	padding-right: 0;
+	width: 900px;
+}
+
+#main {
+	background: transparent;
+}
+
+#main .innerbox {
+	border-radius:  6px;
+	border: 4px dashed #59361c;
+	margin: 10px 0;
+	padding: 0 10px 10px;
+}
+
+#main .innerbox p {
+	margin: 9px 0;
+}
+
+#main .innerbox h4, #main .innerbox p, #main .innerbox h1, #main .innerbox h2, #main .innerbox h3 {
+	margin-left: 30px;
+	color: #59361c;
+}
+
+#main.subpage {
+	background: #FFFFFF none repeat scroll 0 0;
+	padding-bottom: 70px;
+	padding-top: 20px;
+	
+	box-shadow: 0 0 10px 3px #931111;
+}
+
+.comments {
+	width: 980px;
+	margin: 0 auto;
+}
+	
+.bottom-content {
+	background: #fff;
+}
 
 .menu-header{
 	width: 205px;
@@ -452,7 +430,7 @@ blockquote {
 }
 
 
-					
+	
 /*-------------------------------
 The Bean Fights Back Page 
 -------------------------------*/
@@ -485,19 +463,19 @@ The Bean Fights Back Page
 .thebeanfights {
 	height: 60px;
 	width: 480px;
-	background:url("images/the-bean-fights-back/the-bean-fights.png") no-repeat scroll 0 0 transparent;
+	background: url("images/the-bean-fights-back/the-bean-fights.png") no-repeat scroll 0 0 transparent;
 	margin: 0 auto;
 }
 
 .readbelow {
 	height: 20px;
 	width: 110px;
-	background:url("images/the-bean-fights-back/read-below.png") no-repeat scroll 0 0 transparent;
+	background: url("images/the-bean-fights-back/read-below.png") no-repeat scroll 0 0 transparent;
 	margin: 0 auto 18px;
 }
 
 .thebeanwarrior {
-	background:url("images/the-bean-fights-back/the-bean-warrior.png") no-repeat scroll 0 0 transparent;
+	background: url("images/the-bean-fights-back/the-bean-warrior.png") no-repeat scroll 0 0 transparent;
     float: left;
     height: 105px;
     position: absolute;
@@ -545,7 +523,7 @@ The Bean Fights Back Page
 .doyouthink {
 	height: 119px;
 	width: 801px;
-	background:url("images/the-bean-fights-back/do-you-think.png") no-repeat scroll 0 0 transparent;
+	background: url("images/the-bean-fights-back/do-you-think.png") no-repeat scroll 0 0 transparent;
 	margin: 30px auto;
 }
 
@@ -578,52 +556,52 @@ The Bean Fights Back Page (END)
 	float: left;
 	padding: 0 20px;
 }
-	
-		.home #sidebar {
-			float: right;
-			width: 543px;
-		}
-		
-		#sidebar {
-			float: right;
-			width: 303px;		
-			background:#ffffff;
-			padding-bottom:15px;
-		}
-		
-		
+
+.home #sidebar {
+	float: right;
+	width: 543px;
+}
+
+#sidebar {
+	float: right;
+	width: 303px;		
+	background: #ffffff;
+	padding-bottom: 15px;
+}
+
 
 /*-------------------------------
  Footer 
--------------------------------*/	
-		
+-------------------------------*/
+
+
 #footer {
-	width: 100%; 
 	background: transparent url(../../../images/footer-background.png) repeat-x scroll center bottom;
-	padding-bottom: 10px;
+	padding: 40px 0 10px;
 }
 
-.misfit-inc {
-    background: url("images/misfit-inc.png") no-repeat scroll 0 40px transparent !important;
-    clear: none;
-    display: block;
-    float: right;
-    height: 67px;
-    margin: -39px 0px 0px 10px;
-    width: 142px;
+#footerWrap {
+	background: transparent url(../../../images/cardboard.jpg) repeat scroll center top;
+	color: #DADADA;
+	
+	position: relative;
 }
-	.misfit-inc:hover {
-		background-position: 0 -40px !important;
-	}
+#footerWrap h3 { display: none;}
 
-#credits {
-	width:980px;
-	padding: 20px 0 0;
-	margin: 0 auto;
-	overflow: hidden;
+
+#coffeewarning {
+	background: transparent url(../../../images/warning-photostream.png) no-repeat scroll 0 0;
+	height: 214px;
+	width: 170px;
+	margin-left: -17px;
+	
+	position: absolute;
+	top: -80px;
+	z-index: 1;
 }
 
-.findbean { text-align: center;}
+.findbean { text-align: center; overflow: hidden;}
+.findbean p { margin: 0;}
 .findbean span { color: #fff;}
 .loco { display: inline-block;}
 
@@ -653,45 +631,43 @@ The Bean Fights Back Page (END)
 	text-decoration: underline;
 }
 
+#credits {
+	padding: 20px 0 0;
+}
+
+.copyrights {
+	overflow: hidden;
+	padding: 45px 27px 30px;
+}
+
 .copyrights p {
-	color:#FBDCCD;
-	margin: 30px 27px 20px;
+	color: #FBDCCD;
+	margin: 0;
 }
 
 .copyrights p a {
-	color:#DDB86A; 
+	color: #DDB86A; 
 	text-decoration: none;
 }
 .copyrights p a:hover { text-decoration: underline;}
 
-
-#footerWrap {
-	background:transparent url(../../../images/cardboard.jpg) repeat scroll center top;
-	color:#DADADA;
-	width:100%;
-	margin:40px auto 0;
-	
-	position:relative;
+.misfit-inc {
+    background: url("images/misfit-inc.png") no-repeat scroll 0 40px transparent !important;
+    clear: none;
+    display: block;
+    float: right;
+    height: 67px;
+    margin: -39px 0px 0px 10px;
+    width: 142px;
 }
-#footerWrap h3 { display:none;}
-
-
-#coffeewarning {
-	background:transparent url(../../../images/warning-photostream.png) no-repeat scroll 0 0;
-	height:214px;
-	width:170px;
-	margin-left:-17px;
-	
-	position:absolute;
-	top:-80px;
-	z-index: 1;
-}
+	.misfit-inc:hover {
+		background-position: 0 -40px !important;
+	}
 
 
 
 /* Fix Footer Position */
 html, body, * html #wrap {height: 100%;}
-#footer {margin-top: -105px; bottom: -7px }
 
 
 /*-------------------------------
@@ -703,69 +679,70 @@ ul.nav { margin: 0 }
 /* Main navigation */
 
 #nav {
-	height:38px;
-	left:0;
-	margin:112px auto 20px;
-	position:relative;
-	z-index:1;
-	width: 790px;
+	overflow: hidden;
+	padding: 0;
+	width: 85%;
+	
+	position: absolute;
+	top: 105px;
+	left: 7.5%;
 }
 
-	#nav, #nav ul {
-		line-height:1;
-		list-style:none outside none;
-		padding:0;
-	}
-	
-	.nav-lsm,
-	.nav-rsm {
-		overflow: hidden;
-		margin: 0;
-	}
-	
-	.nav-lsm {
-		float: left;
-	}
-	
-	.nav-rsm {
-		float: right;
-	}
-	
-		#nav li {
-			float:left;
-			line-height:15px;
-			margin:0 5px;
-			min-width: 60px;
-		}
-		
-		#nav li a {
-			color:#fbdccd;
-			font-size:15px;
-			text-align:center;
-			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-			text-transform:uppercase;
-			display: block;
-			text-decoration: none;
-			padding-top: 70px;
-		}
-			#nav li#menu-item-17 a:hover,
-			#nav li#menu-item-17.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
-			
-			#nav li#menu-item-16 a:hover,
-			#nav li#menu-item-16.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
-			
-			#nav li#menu-item-15 a:hover,
-			#nav li#menu-item-15.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
-			
-			#nav li#menu-item-20 a:hover,
-			#nav li#menu-item-20.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
-			
-			#nav li#menu-item-19 a:hover,
-			#nav li#menu-item-19.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
-			
-			#nav li#menu-item-18 a:hover,
-			#nav li#menu-item-18.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
-			
+#nav ul {
+	line-height: 1;
+	list-style: none outside none;
+	padding: 0;
+}
+
+.nav-lsm,
+.nav-rsm {
+	overflow: hidden;
+	margin: 0;
+}
+
+.nav-lsm { float: left;}
+.nav-rsm { float: right;}
+
+#nav li {
+	float: left;
+	line-height: 15px;
+	margin: 0 5px;
+	min-width: 60px;
+}
+
+#nav li a {
+	color: #fbdccd;
+	font-size: 15px;
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	text-decoration: none;
+	padding-top: 70px;
+}
+	#nav li#menu-item-17 a:hover,
+	#nav li#menu-item-17.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
+
+	#nav li#menu-item-16 a:hover,
+	#nav li#menu-item-16.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -41px;}
+
+	#nav li#menu-item-15 a:hover,
+	#nav li#menu-item-15.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -106px;}
+
+	#nav li#menu-item-20 a:hover,
+	#nav li#menu-item-20.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -168px;}
+
+	#nav li#menu-item-19 a:hover,
+	#nav li#menu-item-19.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -234px;}
+
+	#nav li#menu-item-18 a:hover,
+	#nav li#menu-item-18.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
+
+
+
+
+
+
 /* Style drop down list */
 
 #nav li ul {
@@ -792,11 +769,11 @@ ul.nav { margin: 0 }
 
 	#nav li ul li a:hover {
 		background: #FFF;
-		color:#222;
+		color: #222;
 	}
 
 		#nav li ul ul {
-			margin: -35px 0 0 180px;
+margin: -35px 0 0 180px;
 		}
 
 #nav li:hover ul ul, #nav li.sfhover ul ul {
@@ -830,8 +807,8 @@ ul#footerNav {
 #footer #footerWrap #copy {
 	position: absolute;
 	top: 27px; left: 0;
-	color:#fff;
-	margin:0;
+	color: #fff;
+	margin: 0;
 }
 	#footer #footerWrap #copy a {
 		color: #6099ff;
@@ -878,8 +855,8 @@ h3#myFavblog {
 }
 
 
-h2.lifestream_date { display:none; } 
-p.lifestream_credits { display:none; } 
+h2.lifestream_date { display: none; } 
+p.lifestream_credits { display: none; } 
 
 
 div.box1, ol.commentlist li, form#comments { background: none repeat !important; background: #111; }
@@ -895,8 +872,8 @@ div.box1 {
 	div.box1 ul, div.box1 ul.blog-list li p { margin: 0 }
 
 		div.box1 ul.blog-list li {
-			border-bottom: 1px dashed #3f566e;
-			padding: 0 0 15px;
+border-bottom: 1px dashed #3f566e;
+padding: 0 0 15px;
 		}
 
 	div.box1 p.link {
@@ -917,28 +894,28 @@ div.box1 {
 	}
 	
 		div.box1 ul.left-list li, div.box1 ul.right-list li, div.box1 ul.list3 li {
-			line-height: 13px;
-			border-top: 1px dashed #9b1616;
-			padding: 8px 0;
+line-height: 13px;
+border-top: 1px dashed #9b1616;
+padding: 8px 0;
 		}
 		
 		div.box1 ul.list3 {
-			margin: 15px 0 0;
+margin: 15px 0 0;
 		}
 
 		div.box1 ul.list3 li {
-			padding: 15px 0;
+padding: 15px 0;
 		}
 		
 		div.box1 ul.list3 li ul {
-			margin: 0;
-			border: none !Important;
+margin: 0;
+border: none !Important;
 		}
 
 		div.box1 ul.list3 li ul li {
-			margin: 0 0 0 15px;
-			padding: 15px 0 0;
-			border: none !Important;
+margin: 0 0 0 15px;
+padding: 15px 0 0;
+border: none !Important;
 		}
 		
 		div.box1 ul.left-list li a, div.box1 ul.right-list li a, div.box1 ul.list3 li a { color: #dadada }
@@ -988,7 +965,7 @@ h4.txt1 {
 	background-position: 20px -40px;
 }
 
-ol.commentlist  { margin:0; }
+ol.commentlist  { margin: 0; }
 
 ol.commentlist li {
 	-moz-border-radius: 6px;
@@ -1002,19 +979,19 @@ ol.commentlist li {
 	ol.commentlist li p {	margin: 0 }
 
 		ol.commentlist li img.avatar {
-			float:right;
-			padding:0 10px 0 10px;
+float: right;
+padding: 0 10px 0 10px;
 		}
 
 		ol.commentlist li p a { color: #6099ff; }
 		
 	ol.commentlist li ul li {
 		padding: 15px 0px 5px 20px;
-		margin:0;
+		margin: 0;
 	}
 
-ol.commentlist .comment-meta a { color:#999; padding-bottom:5px; }
-ol.commentlist .children { margin:0; }
+ol.commentlist .comment-meta a { color: #999; padding-bottom: 5px; }
+ol.commentlist .children { margin: 0; }
 
 
 
@@ -1085,7 +1062,7 @@ div.post {
 }
 
 .post.clearfix p {
-	text-align:justify;
+	text-align: justify;
 }
 
 .divider {
@@ -1103,23 +1080,23 @@ div.post {
 
 .home .post { border-bottom: 1px dashed #777777}
 
-div.post img { border:0px dashed #888888; padding:0; }
+div.post img { border: 0px dashed #888888; padding: 0; }
 
 .box1 .navigation { padding: 10px 0; }
 
 h2.hd-page {
-	height:45px;
-	line-height:60px;
-	margin:10px 0 30px;
-	text-align:center;
+	height: 45px;
+	line-height: 60px;
+	margin: 10px 0 30px;
+	text-align: center;
 }
 div.box1 ul.list2 li, div.list3 li {
-	border-bottom:1px dashed #6D0303;
-	line-height:15px;
-	margin:5px auto;
-	padding:8px 0;
+	border-bottom: 1px dashed #6D0303;
+	line-height: 15px;
+	margin: 5px auto;
+	padding: 8px 0;
 }
-div.list3 .lifestream li { border:none; }
+div.list3 .lifestream li { border: none; }
 
 
 /*------------------------------------------------------------------
@@ -1156,14 +1133,14 @@ form.form {  }
 	form.form ol.fieldset {	list-style: none }
 	
 		form.form ol.fieldset li.field {
-			margin: 0 0 13px;
-			position: relative;
+margin: 0 0 13px;
+position: relative;
 		}
-			form.form ol.fieldset li.field label {
-				position: absolute;
-				top: 5px; left: 195px;
-			}
-			
+form.form ol.fieldset li.field label {
+position: absolute;
+top: 5px; left: 195px;
+}
+
 	form.form p.submit { margin: 0 }
 	
 	form.form p.submit input { padding: 5px 10px }
@@ -1175,8 +1152,8 @@ form.search { /* nothing here */ }
 	form.search p.fields { margin: 0 }
 
 		form.search p.fields input, form.search p.fields button {
-			display: inline;
-			vertical-align: middle;
+display: inline;
+vertical-align: middle;
 		}
 
 
@@ -1202,11 +1179,11 @@ form#topSearch {
 		top: 8px; left: 8px;
 	}
 		form#topSearch p.fields button {
-			background: url(images/ico-search.png) no-repeat;
-			width: 21px; height: 21px;
-			border: none;
-			position: absolute;
-			top: 5px; right: 10px;
+background: url(images/ico-search.png) no-repeat;
+width: 21px; height: 21px;
+border: none;
+position: absolute;
+top: 5px; right: 10px;
 		}
 
 form#comments {
@@ -1237,17 +1214,17 @@ ul.idTabs {
 
 ul.idTabs li {
 	display: inline;
-	margin-right:5px;
-	float:left;
+	margin-right: 5px;
+	float: left;
 }
 
 ul.idTabs li a {
-	display:block;
-	float:left;
-	height:16px;
-	margin:0 auto;
-	padding:10px;
-	text-align:left;
+	display: block;
+	float: left;
+	height: 16px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: left;
 }
 
 ul.idTabs li a.selected, ul.idTabs li a:hover {
@@ -1274,30 +1251,30 @@ ul.idTabs li a.selected, ul.idTabs li a:hover {
 	padding: 15px 0;	
 }
 #tabs .inside ul#comm li {
-	background:url(images/ico-6.gif) no-repeat left center;
-	padding-left:28px;
+	background: url(images/ico-6.gif) no-repeat left center;
+	padding-left: 28px;
 }
 #tabs .inside ul#pop li {
-	background:url(images/ico-2.gif) no-repeat left center;
-	padding-left:28px;
+	background: url(images/ico-2.gif) no-repeat left center;
+	padding-left: 28px;
 }
 
 
 #tagcloud {
-	padding:15px;
+	padding: 15px;
 }
 #tabs .inside ul{
-	margin:0;
-	padding:0px 15px 10px 15px !important;
+	margin: 0;
+	padding: 0px 15px 10px 15px !important;
 }
 .home #tabs {
-	width:260px;
-	float:left;
-	margin:24px 0 20px;
+	width: 260px;
+	float: left;
+	margin: 24px 0 20px;
 }
 .home div#myfavblog {
-	width:260px;
-	float:right;
+	width: 260px;
+	float: right;
 }
 
 
@@ -1307,7 +1284,7 @@ Widgets
 -------------------------------*/
 
 .widgetized {
-	width:304px;
+	width: 304px;
 }
 
 .widgetized .inside {
@@ -1322,30 +1299,30 @@ Widgets
 }
 
 #flickr-sidebar {
-	background:transparent url(../../../images/ourphotos.png) no-repeat scroll center 0;
-	margin-bottom:15px;
+	background: transparent url(../../../images/ourphotos.png) no-repeat scroll center 0;
+	margin-bottom: 15px;
 }
 
 #flickr-sidebar h3 {
-	display:none;
+	display: none;
 }
 
 #twitter-tools {
-	padding:52px 0 0;
-	background:transparent url(../../../images/ourtweets.png) no-repeat scroll center 0;
-	margin:15px 0 0;
-	width:333px;
+	padding: 52px 0 0;
+	background: transparent url(../../../images/ourtweets.png) no-repeat scroll center 0;
+	margin: 15px 0 0;
+	width: 333px;
 }
 
 #twitter-tools h3 {
-	display:none;
+	display: none;
 }
 
 #twitter-tools .aktt_more_updates {
-	border:0;
+	border: 0;
 }
 
-table#wp-calendar { margin:0 !important; }
+table#wp-calendar { margin: 0 !important; }
 
 #wp-calendar caption {
 	color: #fff;
@@ -1374,64 +1351,64 @@ table#wp-calendar { margin:0 !important; }
 }
 
 	.flickr-photos {
-		margin:0 auto;
-		padding-bottom:0;
-		padding-left:60px;
-		width:780px;
+		margin: 0 auto;
+		padding-bottom: 0;
+		padding-left: 60px;
+		width: 780px;
 	}
 	
 		a.more-photos {
-			display:none;
+display: none;
 		}
 		
-			.flickr-photos a img {
-				border:3px solid #402612;
-				margin:23px 2px 12px;
-				padding:4px
-			}
+.flickr-photos a img {
+border: 3px solid #402612;
+margin: 23px 2px 12px;
+padding: 4px
+}
 	
 /*Disqus Commenting*/
 
 .dsq-brlink {
-	font-size:10px;
-	margin-left:50px;
+	font-size: 10px;
+	margin-left: 50px;
 }
 
 /*Contact Form 7*/
 
 div.wpcf7 {
-	margin:0 auto;
+	margin: 0 auto;
 }
 
 	div.wpcf7 p {
-		margin:10px auto;
-		text-align:left;
+		margin: 10px auto;
+		text-align: left;
 	}
 
 	.wpcf7-form-control-wrap input {
-		-khtml-border-radius:6px;
-		-moz-border-radius:6px;
-		-webkit-border-radius:6px;
-		border-radius:6px;
-		border:2px solid #59361C;
+		-khtml-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		border: 2px solid #59361C;
 	}
 	
 	.wpcf7-form-control-wrap textarea {
-		-khtml-border-radius:6px;
-		-moz-border-radius:6px;
-		-webkit-border-radius:6px;
-		border-radius:6px;
-		border:2px solid #59361C;
+		-khtml-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		border: 2px solid #59361C;
 	}
 	
 .wpcf7-mail-sent-ok {
-	-khtml-border-radius:6px;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	clear:left;
-	display:block;
-	width:300px;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	clear: left;
+	display: block;
+	width: 300px;
 }
 
 .wpcf7 input, .wpcf7 select,
@@ -1498,14 +1475,14 @@ div.wpcf7 {
 	background: url(images/bg-flickr.png) no-repeat;
 	width: 91px; height: 11px;
 	margin: 0 25px 10px 12px;
-	float:right;
+	float: right;
 }
 #video {
 	padding: 10px;
 }
 
-#sidebar #advert_125x125 { padding:30px 0 20px 30px; margin: 0 0 18px;	}
-#sidebar #advert_125x125 img { margin:0 15px 5px 0; }
+#sidebar #advert_125x125 { padding: 30px 0 20px 30px; margin: 0 0 18px;	}
+#sidebar #advert_125x125 img { margin: 0 15px 5px 0; }
 
 #portfolio {
 	clear: both;
@@ -1528,7 +1505,7 @@ div.wpcf7 {
 /*Google Form*/
 
 .ss-form-entry {
-	margin-bottom:0;
+	margin-bottom: 0;
 }
 
 /*Google Form End*/
@@ -1598,7 +1575,7 @@ Utility classes
 Clearfix
 -------------------------------*/
 
-.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.clearfix: after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 .clearfix { display: block }
 .fix{ clear: both; height: 1px; margin: -1px 0 0; overflow: hidden; }
 
@@ -1625,18 +1602,18 @@ Social Media
 	}
 	
 	.social-media li.twitter-tweet {
-		height:20px;
-		margin-top:1px !important;
+		height: 20px;
+		margin-top: 1px !important;
 	}
 	
 	.social-media li.evernote-clip {
-		 margin:2px 0 0 -3px !important;
-		 width:51px;
-		 height:20px;
+		 margin: 2px 0 0 -3px !important;
+		 width: 51px;
+		 height: 20px;
 	}
 	
 	.social-media li.facebook-like, .social-media li.facebook-like-face {
-		margin-left:0 !important;
+		margin-left: 0 !important;
 	}
 	
 	.social-media li.facebook-like-face {
@@ -1648,7 +1625,7 @@ Social Media
 	}
 	
 		.social-media li.facebook-like iframe {
-			height: 23px !important;
+height: 23px !important;
 		}
 		
 	.social-media li.sharethis-count {
@@ -1740,7 +1717,7 @@ Facebook Comments
 
 
 /*-------------------------------------------------
-			Mailchimp
+Mailchimp
 -------------------------------------------------*/
 
 #mc_embed_signup, #mc_embed_signup-1 {
@@ -1796,11 +1773,11 @@ Facebook Comments
 }
 
 	.mc-field-group label {
-		font-size:14px;
+		font-size: 14px;
 	}
 
 	.mc-field-group input {
-		font-size:20px;
+		font-size: 20px;
 	}
 	
 	#mc_embed_signup #mc-embedded-subscribe, #mc_embed_signup-1 #mc-embedded-subscribe {
@@ -1818,11 +1795,11 @@ Facebook Comments
 		width: 156px !important;
 	}
 		#mc-embedded-subscribe:hover { background-position: 0 -50px !important; }
-			
+
 		.email-rss:hover,
 		.mc-embedded-subscribe:hover {
-			background:#cccccc;
-			border: 1px solid #999;
+background: #cccccc;
+border: 1px solid #999;
 		}
 		
 .mce_inline_error {
@@ -1841,14 +1818,14 @@ Facebook Comments
 
 	
 #mc_embed_signup .inactive{
-	color:#999;
+	color: #999;
 	}	 
 #mc_embed_signup .active{
-	color:#333;
+	color: #333;
 	}	 		
 #mc_embed_signup .focused{
-	color:#333;
-	background:#fffee7;
+	color: #333;
+	background: #fffee7;
 	}	 
 	
 #nav li#menu-item-253, #nav li#menu-item-253 a {

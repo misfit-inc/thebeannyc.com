@@ -54,67 +54,48 @@
 
 <body id="woothemes" <?php body_class(); ?>>
 
-<!--	<!?php if (is_front_page()) { ?>
-	
-		<a class="supportthebean" href="/the-bean-fights-back"><span class="dn">Support The Bean</span></a>
-	
-	<!?php } else {} ?> -->
-	
+<?php
+	$fooboo = false;
+	if (is_front_page() && ($fooboo)) {
+?>
+	<a class="supportthebean" href="/the-bean-fights-back"><span class="dn">Support The Bean</span></a>
+<?php } else {} ?>
 
-    <div class="rays">
-    
-    </div>
+<div id="header" class="header">
+<div class="container">
 
-    <div id="header">
-    
-        <div class="beansteam">
-        
-        </div>
-    
-        <ul id="nav" class="nav">
-		
-			<?php 
-				$argsNav1 = array(
-					'menu' => 'Left Side Menu',
-					'menu_class' => 'nav-menu nav-lsm',
-					'container' => '',
-				);
-				wp_nav_menu($argsNav1);
-			?>
-			
-			<?php 
-				$argsNav2 = array(
-					'menu' => 'Right Side Menu',
-					'menu_class' => 'nav-menu nav-rsm',
-					'container' => '',
-				);
-				wp_nav_menu($argsNav2);
-			?>
-
-        </ul>
-        
-        <div id="logo">
-        
-            <a href="<?php bloginfo('url'); ?>"><span style="display:none;">Blog URL</span></a>
-        
-        </div>
-        
-        <?php if (is_home()) { ?>
-        
-            <div class="pssst">
-            
-            </div>
-		
-        <?php } elseif (is_page('the-bean-fights-back')) { ?>
-		
-		<div class="thebeanfights">
-		
-		</div>
-		
-		<div class="readbelow">
+	<div class="rays" style=""></div>
+	<div class="beansteam"><img src="<?php bloginfo('url'); ?>/images/bean-steam.png" /></div>
+	<div id="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('url'); ?>/images/the-bean-logo.png" /></a></div>
 	
-		</div>
+	<ul id="nav" class="nav">
+		<?php 
+			$argsNav1 = array(
+			'menu' => 'Left Side Menu',
+			'menu_class' => 'nav-menu nav-lsm',
+			'container' => '',
+			);
+			wp_nav_menu($argsNav1);
+		?>
 		
-		<?php } else {} ?>
-		
-    </div>
+		<?php 
+			$argsNav2 = array(
+				'menu' => 'Right Side Menu',
+				'menu_class' => 'nav-menu nav-rsm',
+				'container' => '',
+			);
+			wp_nav_menu($argsNav2);
+		?>
+	</ul>
+	
+	<?php if (is_home()) { ?>
+		<div class="pssst"></div>
+	<?php } elseif (is_page('the-bean-fights-back')) { ?>
+		<div class="thebeanfights"></div>
+		<div class="readbelow"></div>
+	<?php } else {} ?>
+
+</div><!-- // container -->
+</div><!-- // header -->
+
+

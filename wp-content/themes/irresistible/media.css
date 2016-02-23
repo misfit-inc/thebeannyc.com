@@ -1,0 +1,305 @@
+
+/* ------------------------------  1023 - 0000  ------------------------------ */
+
+@media only screen and (max-width: 1023px) {
+	
+	/* BASE STYLES */
+	
+	.container {
+		width: 95%;
+	}
+	
+	
+	/* CONTENT - HOMEPAGE */
+	
+	.whatwe h2 { font-size: 38px;}
+	.whatwe p { font-size: 28px;}
+	
+	
+	
+	/* FOOTER */
+	
+	.loco { display: block;}
+	.loco span.dot.mob { display: inline-block;}
+	
+}
+
+
+
+/* ------------------------------  959 - 000  ------------------------------ */
+
+@media only screen and (max-width: 959px) {
+	
+	/* HEADER */
+	
+	#logo {
+		margin-top: -68px;
+	}
+
+	#logo a {
+		width: 310px;
+	}
+	
+	.beansteam {
+		width: 620px;
+	}
+	
+	#nav {
+		width: 100%;
+		
+		top: auto;
+		bottom: 30px;
+		left: 0;
+	}
+	
+	/* CONTENT - HOMEPAGE */
+	
+	.whatwe .left,
+	.whatwe .right {
+		float: none;
+		width: 500px;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.whatwe .left { padding: 50px 0 25px;}
+	.whatwe .right { padding: 25px 0 40px;}
+	
+	.sugarjarcon {
+		position: static;
+		width: 304px;
+		margin: 0 auto;
+	}
+	
+	.sugarjar {
+		height: 105px;
+	}
+	
+	.thesugars {
+		height: 110px;
+	}
+	
+	.twitter.spoonee { display: none;}
+	.twitter.cubee { display: block;}
+	
+	
+	/* FOOTER */
+	
+	.instabox { width: calc(14.28% - 22px);}
+	.instabox7 { display: none;}
+	
+	.copyrights { text-align: center;}
+	
+	.copyrights .one,
+	.copyrights .two {
+		float: none;
+		line-height: 1.5;
+	}
+	
+	.copyrights .one { margin-bottom: 3px;}
+	
+	.misfit-inc {
+		background: url("images/misfit-inc.png") no-repeat scroll 0 0 transparent !important;
+		display: inline-block;
+		float: none;
+		
+		width: 102px;
+		height: 26px;
+		margin: 0 0 -11px 7px;
+	}
+	
+	.misfit-inc:hover { background-position: 0 0 !important;}
+	
+	
+}
+
+
+
+/* ------------------------------  767 - 000  ------------------------------ */
+
+@media only screen and (max-width: 767px) {
+
+	/* HEADER */
+	
+	.beansteam { display: none;}
+	
+	#logo {
+		margin-top: 0;
+		padding: 0 0 60px;
+	}
+	
+	#logo a {
+		width: 45%;
+	}
+	
+	/* FOOTER */
+	
+	.instabox { width: calc(16.66% - 22px);}
+	.instabox6 { display: none;}
+	
+	
+	/* .menubox */
+	
+	.menubox {
+		width: auto;
+		margin-left: 0;
+	}
+	
+	.menubox.left,
+	.menubox.right {
+		float: none;
+	}
+	
+	
+	/* ABOUT PAGE */
+	
+	.page-id-9 p img {
+		float: none;
+		width: 100%;
+	}
+	
+	.page-id-9 p { margin: 13px 0;}
+	
+	
+	/* CONTACT PAGE */
+	
+	.conleft,
+	.conright {
+		float: none;
+		width: auto;
+	}
+}
+
+
+
+/* ------------------------------  599 - 000  ------------------------------ */
+
+@media only screen and (max-width: 599px) {
+
+	/* FOOTER */
+	
+	.instabox { width: calc(20% - 22px);}
+	.instabox5 { display: none;}
+
+}
+
+
+
+/* ------------------------------  599 - 000  ------------------------------ */
+
+@media only screen and (max-width: 567px) {
+
+	/* FOOTER */
+	
+	.instabox { width: calc(25% - 22px);}
+	.instabox4 { display: none;}
+
+}
+
+
+
+/* ------------------------------  479 - 000  ------------------------------ */
+
+@media only screen and (max-width: 479px) {
+
+	/* HEADER */
+	
+	#logo {
+		margin-top: 0;
+		padding: 0 0 15px;
+	}
+	
+	#logo a {
+		width: 70%;
+	}
+	
+	#nav {
+		position: static;
+	}
+	
+	.nav-lsm,
+	.nav-rsm {
+		float: none;
+		text-align: center;
+	}
+	.nav-lsm { margin-bottom: 10px;}
+	
+	#nav li {
+		float: none;
+		display: inline-block;
+		
+		min-width: 0;
+	}
+	
+	#nav li a {
+		padding: 0;
+	}
+	#nav li.current-menu-item a { font-weight: bold;}
+	
+	
+	/* CONTENT - HOMEPAGE */
+	
+	.whatwe .left,
+	.whatwe .right {
+		max-width: 95%;
+	}
+	
+	.whatwe h2 {
+		font-size: 32px;
+	}
+	
+	.whatwe p {
+		font-size: 26px;
+	}
+	
+	.sugarjarcon {
+		width: 260px;
+	}
+	
+	.sugarjar {
+		width: 260px;
+		height: 70px;
+	}
+	
+	
+	/* FOOTER */
+	
+	#coffeewarning { display: none;}
+	
+	.instabean {
+		margin-left: 0;
+		padding: 5px 0;
+	}
+	
+	.instabox {
+		width: calc(50% - 22px);
+		margin: 5px 5px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

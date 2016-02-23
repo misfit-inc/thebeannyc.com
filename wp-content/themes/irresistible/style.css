@@ -192,7 +192,6 @@ blockquote {
 }
 
 .beansteam {
-	height: 116px;
 	width: 746px;
 	margin: 0 auto;
 }
@@ -203,8 +202,8 @@ blockquote {
 	
 #logo a {
 	display: block;
-	height: 325px;
 	width: 385px;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -256,6 +255,7 @@ blockquote {
 
 .sugarjarcon {
 	position: absolute;
+	top: 0;
 	left: 50%;
 	margin-left: -166px;
 }
@@ -353,7 +353,18 @@ blockquote {
 }
 	.twitter:hover { background: url("../../../images/twitter-on-spoon.png") no-repeat scroll 0 0 transparent;}
 
-
+.twitter.cubee {
+	display: none;
+	background: url("../../../images/twitter_cube.png") no-repeat scroll 0 -90px transparent;
+	width: 85px;
+	height: 79px;
+	
+	top: auto;
+	right: auto;
+	left: 148px;
+	bottom: 30px;
+}
+	.twitter.cubee:hover { background: url("../../../images/twitter_cube.png") no-repeat scroll 0 0 transparent;}
 
 
 /* CONTENT - SUBPAGES */
@@ -597,7 +608,7 @@ The Bean Fights Back Page (END)
 	
 	position: absolute;
 	top: -80px;
-	z-index: 1;
+	z-index: 10;
 }
 
 .findbean { text-align: center; overflow: hidden;}
@@ -626,6 +637,7 @@ The Bean Fights Back Page (END)
 	left: 0;
 	margin-top: -3px;
 }
+.loco span.dot.mob { display: none;}
 
 .loco .highlight:hover {
 	text-decoration: underline;
@@ -639,6 +651,9 @@ The Bean Fights Back Page (END)
 	overflow: hidden;
 	padding: 45px 27px 30px;
 }
+
+.copyrights	.one { float: left;}
+.copyrights	.two { float: right;}
 
 .copyrights p {
 	color: #FBDCCD;
@@ -867,7 +882,7 @@ div.box1 {
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	margin: 0 0 20px;
-	padding: 0 20px 35px;
+	padding: 0 25px 35px;
 }
 	div.box1 ul, div.box1 ul.blog-list li p { margin: 0 }
 
@@ -1080,7 +1095,7 @@ div.post {
 
 .home .post { border-bottom: 1px dashed #777777}
 
-div.post img { border: 0px dashed #888888; padding: 0; }
+div.post img { border: 0px dashed #888888; padding: 0; max-width: 100%;}
 
 .box1 .navigation { padding: 10px 0; }
 
@@ -1128,33 +1143,33 @@ button.button {
 }
 
 /* General forms */
-form.form {  }
+form.form {}
 
-	form.form ol.fieldset {	list-style: none }
-	
-		form.form ol.fieldset li.field {
-margin: 0 0 13px;
-position: relative;
-		}
-form.form ol.fieldset li.field label {
-position: absolute;
-top: 5px; left: 195px;
+form.form ol.fieldset {	list-style: none }
+
+form.form ol.fieldset li.field {
+	margin: 0 0 13px;
+	position: relative;
 }
 
-	form.form p.submit { margin: 0 }
-	
-	form.form p.submit input { padding: 5px 10px }
+form.form ol.fieldset li.field label {
+	position: absolute;
+	top: 5px;
+	left: 195px;
+}
+
+form.form p.submit { margin: 0; }
+form.form p.submit input { padding: 5px 10px;}
 
 
 /* Search forms where button and text input are next to each other  */
 form.search { /* nothing here */ }
-	
-	form.search p.fields { margin: 0 }
+form.search p.fields { margin: 0 }
 
-		form.search p.fields input, form.search p.fields button {
-display: inline;
-vertical-align: middle;
-		}
+form.search p.fields input, form.search p.fields button {
+	display: inline;
+	vertical-align: middle;
+}
 
 
 /*-------------------------------
@@ -1167,24 +1182,30 @@ form#topSearch {
 	position: absolute;
 	top: 10px; right: 0;
 }
-	form#topSearch p.fields input {
-		color: #fff;
-		font-size: 14px;
-		font-weight: bold;
-		width: 130px;
-		background: none;
-		overflow: hidden;
-		border: none;
-		position: absolute;
-		top: 8px; left: 8px;
-	}
-		form#topSearch p.fields button {
-background: url(images/ico-search.png) no-repeat;
-width: 21px; height: 21px;
-border: none;
-position: absolute;
-top: 5px; right: 10px;
-		}
+
+form#topSearch p.fields input {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	width: 130px;
+	background: none;
+	overflow: hidden;
+	border: none;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+form#topSearch p.fields button {
+	background: url(images/ico-search.png) no-repeat;
+	width: 21px;
+	height: 21px;
+	border: none;
+	
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
 
 form#comments {
 	-moz-border-radius: 6px;
@@ -1193,7 +1214,7 @@ form#comments {
 	border-radius: 6px;
 	padding: 20px 30px;
 }
-		
+
 
 /*------------------------------------------------------------------
 

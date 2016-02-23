@@ -16,7 +16,7 @@ jQuery.ajax({
 			var beanlink = data.data[i].link;
 			var beanimage = data.data[i].images.low_resolution.url;
 			
-			beanid.append("<div class='instabox'><a target='_blank' href='" + beanlink + "'><img src=" + beanimage + "/></a></div>");
+			beanid.append("<div class='instabox instabox" + i + "'><a target='_blank' href='" + beanlink + "'><img src=" + beanimage + "/></a></div>");
 		}
 	}
 });

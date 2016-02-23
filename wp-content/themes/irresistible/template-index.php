@@ -11,22 +11,6 @@ Template Name: Index Page
 	<div id="content" class="homepg">
 	<div class="container">
 		
-		<div class="sugarjarcon">
-			
-			<div class="thesugars">
-				<div class="twitter"><a target="_blank" href="http://twitter.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on twitter</span></a></div>
-				<div class="pinterest"><a target="_blank" href="http://pinterest.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on Pinterest</span></a></div>
-				<div class="instagram"><a target="_blank" href="http://instagram.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on Instagram</span></a></div>
-				<div class="yelp"><a target="_blank" href="http://www.yelp.com/biz/the-bean-new-york-3"><span style="display:none;">The Bean Coffee and Tea on Yelp</span></a></div>
-				<div class="foursquare"><a target="_blank" href="https://foursquare.com/v/the-bean/4ee13a16775b24730288e9f3"><span style="display:none;">The Bean Coffee and Tea on foursquare</span></a></div>
-				<div class="tumblr"><a target="_blank" href="http://thebeannyc.tumblr.com/"><span style="display:none;">The Bean Coffee and Tea on Tumblr</span></a></div>
-				<div class="facebook"><a target="_blank" href="http://www.facebook.com/thebeannyc"><span style="display:none;">The Bean Facebook Page</span></a></div>
-            </div>
-			
-            <div class="sugarjar"></div>
-            
-        </div>
-		
 		<div class="whatwe">
 		
 			<div class="left">
@@ -46,7 +30,24 @@ Template Name: Index Page
 			</div>
 		
 		</div>
+		
+		<div class="sugarjarcon">
 			
+			<div class="thesugars">
+				<div class="twitter spoonee"><a target="_blank" href="http://twitter.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on twitter</span></a></div>
+				<div class="twitter cubee"><a target="_blank" href="http://twitter.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on twitter</span></a></div>
+				<div class="pinterest"><a target="_blank" href="http://pinterest.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on Pinterest</span></a></div>
+				<div class="instagram"><a target="_blank" href="http://instagram.com/thebeannyc"><span style="display:none;">The Bean Coffee and Tea on Instagram</span></a></div>
+				<div class="yelp"><a target="_blank" href="http://www.yelp.com/biz/the-bean-new-york-3"><span style="display:none;">The Bean Coffee and Tea on Yelp</span></a></div>
+				<div class="foursquare"><a target="_blank" href="https://foursquare.com/v/the-bean/4ee13a16775b24730288e9f3"><span style="display:none;">The Bean Coffee and Tea on foursquare</span></a></div>
+				<div class="tumblr"><a target="_blank" href="http://thebeannyc.tumblr.com/"><span style="display:none;">The Bean Coffee and Tea on Tumblr</span></a></div>
+				<div class="facebook"><a target="_blank" href="http://www.facebook.com/thebeannyc"><span style="display:none;">The Bean Facebook Page</span></a></div>
+            </div>
+			
+            <div class="sugarjar"></div>
+            
+        </div>
+		
 	</div><!-- // .container -->
 	</div><!-- // #content -->
 

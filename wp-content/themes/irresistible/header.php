@@ -16,6 +16,7 @@
 <meta property="fb:app_id" content="{207466905854}"/>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/media.css" media="screen" />
 <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" /><![endif]-->
 <!--[if IE 6]>
 <script src="<?php bloginfo('template_directory'); ?>/includes/js/pngfix.js"></script>

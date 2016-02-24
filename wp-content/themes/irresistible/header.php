@@ -92,8 +92,8 @@
 	<?php if (is_home()) { ?>
 		<div class="pssst"></div>
 	<?php } elseif (is_page('the-bean-fights-back')) { ?>
-		<div class="thebeanfights"></div>
-		<div class="readbelow"></div>
+		<div class="thebeanfights"><img src="<?php bloginfo('template_url'); ?>/images/the-bean-fights-back/the-bean-fights.png" /></div>
+		<div class="readbelow"><img src="<?php bloginfo('template_url'); ?>/images/the-bean-fights-back/read-below.png" /></div>
 	<?php } else {} ?>
 
 </div><!-- // container -->

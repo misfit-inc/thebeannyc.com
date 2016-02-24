@@ -414,11 +414,6 @@ blockquote {
 	
 	box-shadow: 0 0 10px 3px #931111;
 }
-
-.comments {
-	width: 980px;
-	margin: 0 auto;
-}
 	
 .bottom-content {
 	background: #fff;
@@ -448,11 +443,14 @@ The Bean Fights Back Page
 
 #main.tbfb {
 	margin: 0 auto;
-    width: 660px;
+    max-width: 90%;
+	width: 660px;
 }
 
 #main.tbfb div.post {
+	max-width: 95%;
 	width: 610px;
+	margin: 0 auto;
 }
 
 #main.tbfb .post.clearfix p {
@@ -472,37 +470,38 @@ The Bean Fights Back Page
 	}
 
 .thebeanfights {
-	height: 60px;
-	width: 480px;
-	background: url("images/the-bean-fights-back/the-bean-fights.png") no-repeat scroll 0 0 transparent;
-	margin: 0 auto;
+	text-align: center;
+	padding: 0 20px;
 }
+.thebeanfights img { max-width: 100%;}
 
 .readbelow {
-	height: 20px;
-	width: 110px;
-	background: url("images/the-bean-fights-back/read-below.png") no-repeat scroll 0 0 transparent;
-	margin: 0 auto 18px;
+	text-align: center;
 }
+.readbelow img { max-width: 20%;}
+
+.tbw-rej { position: relative;}
+.tbw-rej img { max-width: 100%;}
 
 .thebeanwarrior {
-	background: url("images/the-bean-fights-back/the-bean-warrior.png") no-repeat scroll 0 0 transparent;
-    float: left;
-    height: 105px;
     position: absolute;
-    top: 240px;
-    width: 135px;
+	
+	left: -190px;
+	top: -133px;
 }
 
 .redeyedjoe {
-    background: url("images/the-bean-fights-back/red-eyed-joe.png") no-repeat scroll 0 0 transparent;
-    float: right;
-    height: 325px;
-    left: 0;
-    margin-top: 30px;
-    width: 205px;
+	position: absolute;
+	
+	right: -230px;
+	top: -381px;
 }
 
+.psos {
+	text-align: center;
+}
+
+/*
 .pleaseshareour {
     background: url("images/the-bean-fights-back/please-share-our.png") no-repeat scroll 0 0 transparent;
     height: 25px;
@@ -510,33 +509,48 @@ The Bean Fights Back Page
     top: 350px;
     width: 360px;
 }
+*/
 
 .cardboard {
     background: url("images/the-bean-fights-back/cardboard.png") repeat scroll center top transparent;
-    height: 96px;
-    padding: 10px 0 0;
-    width: 100%;
+    padding: 10px 0;
 }
 
-.newsletter {
-	overflow: auto;
-	width: 980px;
-	margin: auto;
+.cardboard .container {
+	overflow: hidden;
 }
 
 .getnotified {
-    background: url("images/the-bean-fights-back/get-notified.png") no-repeat scroll 0 0 transparent;
-    height: 30px;
-    margin: 0 auto;
-    width: 715px;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 0 20px;
 }
+.getnotified img { max-width: 100%;}
 
 .doyouthink {
-	height: 119px;
-	width: 801px;
-	background: url("images/the-bean-fights-back/do-you-think.png") no-repeat scroll 0 0 transparent;
-	margin: 30px auto;
+	text-align: center;
+	padding: 0 20px 30px;
 }
+
+.doyouthink img {
+	max-width: 100%;
+}
+
+.bottom-content.tbfb {
+	padding: 30px 0;
+}
+
+.comments {
+	width: 720px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.fb-comments > span,
+.fb-comments iframe {
+	width: 100% !important;
+}
+
 
 /*.supportthebean {
     background: url("images/the-bean-fights-back/support-the-bean.png") no-repeat scroll 0 0 transparent;
@@ -1606,20 +1620,22 @@ Social Media
 -------------------------------*/
 
 .social-media {
-	margin: 10px 0 0 !important; 
+	max-width: 500px;
+	width: 100%;
 	height: 25px;
-	padding: 0 !important;
-	width: 500px;
+	margin: 10px auto 0;
+	padding: 0;
+	text-align: center;
 }
 
 	.social-media li {
 		list-style: none;
-		float: left;
+		display: inline-block;
 		list-style: none !important;
 	}
 	
 	.social-media li.facebook-share {
-		width: 150px;
+		width: 135px;
 	}
 	
 	.social-media li.twitter-tweet {
@@ -1732,7 +1748,7 @@ Facebook Comments
 }
 
 .fb-like iframe, .fb-like {
-	width: 150px !important;
+	width: 100% !important;
 }
 
 
@@ -1741,116 +1757,50 @@ Facebook Comments
 Mailchimp
 -------------------------------------------------*/
 
-#mc_embed_signup, #mc_embed_signup-1 {
-    background: none repeat scroll 0 0 transparent;
-    margin: 0 auto 0 !important;
-    width: 722px;
+.tbfbform {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-#mc_embed_signup-1 {
-	width: 860px;
+.tbfbform form {
+	position: relative;
 }
 
-	#mc_embed_signup label, #mc_embed_signup-1 label {
-		font-family: bebas-neue, sans-serif;
-		color: #000 !important;
-		text-transform: uppercase;
-	}
-	#mc_embed_signup input, #mc_embed_signup-1 input { 
-		-khtml-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		background: #EEEEEE;
-		margin: 0 auto !important; 
-		border: 2px solid #666666;
-		width: 94% !important;
-		height: 33px;
-	}
-	#mc_embed_signup .mc-field-group, #mc_embed_signup-1 .mc-field-group { 
-		margin: 0 0 10px !important; 
-		clear: none !important; 
-		float: left !important;
-		width: 263px;
-	}
-	
-	#mc_embed_signup-1 .mc-field-group { 
-		width: 353px;
-	}
-	
-	#mc_embed_signup.rss-email, #mc_embed_signup-1.rss-email { 
-		-khtml-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		width: 100%; 
-		margin-left: 36px;
-	}
-		
-#mc_embed_signup fieldset, #mc_embed_signup-1 fieldset {
-	background-color: transparent !important;
-	border: 0 !important;
-	padding-top: 0 !important;
+.form-input {
+	margin-right: 166px;
 }
 
-	.mc-field-group label {
-		font-size: 14px;
-	}
-
-	.mc-field-group input {
-		font-size: 20px;
-	}
-	
-	#mc_embed_signup #mc-embedded-subscribe, #mc_embed_signup-1 #mc-embedded-subscribe {
-		-khtml-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		background: url("images/the-bean-fights-back/sign-up.png") no-repeat scroll 0 0 transparent;
-		border: 0 none !important;
-		color: #FFFFFF;
-		cursor: pointer;
-		font-size: 21px;
-		height: 45px;
-		padding: 0;
-		width: 156px !important;
-	}
-		#mc-embedded-subscribe:hover { background-position: 0 -50px !important; }
-
-		.email-rss:hover,
-		.mc-embedded-subscribe:hover {
-background: #cccccc;
-border: 1px solid #999;
-		}
-		
-.mce_inline_error {
-    color: red !important;
-    float: left;
-    font-weight: bold;
-    margin: 1em 0 0;
-    padding: 0 0 0 10px !important;
-    width: 80%;
-    z-index: 1;
-}
-
-#mce-responses {
+.mc-field-group label {
 	display: none;
 }
 
-	
-#mc_embed_signup .inactive{
-	color: #999;
-	}	 
-#mc_embed_signup .active{
-	color: #333;
-	}	 		
-#mc_embed_signup .focused{
-	color: #333;
-	background: #fffee7;
-	}	 
-	
-#nav li#menu-item-253, #nav li#menu-item-253 a {
-	width: 98px;
+.mc-field-group input {
+	float: left;
+	border: 2px solid #666;
+	border-radius: 4px;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	height: 43px;
+	width: 48%;
+	margin-right: 2%;
+}
+
+.mc-field-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.mc-field-submit input {
+	background: url("images/the-bean-fights-back/sign-up.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	border: 0 none;
+	border-radius: 4px;
+	width: 156px;
+	height: 45px;
+	cursor: pointer;
 }
 
 
@@ -1981,7 +1931,127 @@ border: 1px solid #999;
 
 
 
-/* ??? */
+/* CSS DUMPYARD */
+
+/*
+
+#mc_embed_signup, #mc_embed_signup-1 {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 auto 0 !important;
+    width: 722px;
+}
+
+#mc_embed_signup-1 {
+	width: 860px;
+}
+
+	#mc_embed_signup label, #mc_embed_signup-1 label {
+		font-family: bebas-neue, sans-serif;
+		color: #000 !important;
+		text-transform: uppercase;
+	}
+	#mc_embed_signup input, #mc_embed_signup-1 input { 
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		background: #EEEEEE;
+		margin: 0 auto !important; 
+		border: 2px solid #666666;
+		width: 94% !important;
+		height: 33px;
+	}
+	#mc_embed_signup .mc-field-group, #mc_embed_signup-1 .mc-field-group { 
+		margin: 0 0 10px !important; 
+		clear: none !important; 
+		float: left !important;
+		width: 263px;
+	}
+	
+	#mc_embed_signup-1 .mc-field-group { 
+		width: 353px;
+	}
+	
+	#mc_embed_signup.rss-email, #mc_embed_signup-1.rss-email { 
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		width: 100%; 
+		margin-left: 36px;
+	}
+		
+#mc_embed_signup fieldset, #mc_embed_signup-1 fieldset {
+	background-color: transparent !important;
+	border: 0 !important;
+	padding-top: 0 !important;
+}
+
+	.mc-field-group label {
+		font-size: 14px;
+	}
+
+	.mc-field-group input {
+		font-size: 20px;
+	}
+	
+	#mc_embed_signup #mc-embedded-subscribe, #mc_embed_signup-1 #mc-embedded-subscribe {
+		-khtml-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		background: url("images/the-bean-fights-back/sign-up.png") no-repeat scroll 0 0 transparent;
+		border: 0 none !important;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 21px;
+		height: 45px;
+		padding: 0;
+		width: 156px !important;
+	}
+		#mc-embedded-subscribe:hover { background-position: 0 -50px !important; }
+
+		.email-rss:hover,
+		.mc-embedded-subscribe:hover {
+background: #cccccc;
+border: 1px solid #999;
+		}
+		
+.mce_inline_error {
+    color: red !important;
+    float: left;
+    font-weight: bold;
+    margin: 1em 0 0;
+    padding: 0 0 0 10px !important;
+    width: 80%;
+    z-index: 1;
+}
+
+#mce-responses {
+	display: none;
+}
+
+	
+#mc_embed_signup .inactive{
+	color: #999;
+	}	 
+#mc_embed_signup .active{
+	color: #333;
+	}	 		
+#mc_embed_signup .focused{
+	color: #333;
+	background: #fffee7;
+	}	 
+	
+#nav li#menu-item-253, #nav li#menu-item-253 a {
+	width: 98px;
+}
+
+*/
+
+
+
+
 
 /*
 

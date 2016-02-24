@@ -20,8 +20,6 @@ Template Name: tbfb
 					
 					<?php the_content('<p>Read the rest of this page &raquo;</p>'); ?>
 					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel urna quam. Sed id ligula suscipit, rutrum dolor sit amet, consectetur lacus. Fusce ultricies ornare velit in posuere. Morbi urna dui, tristique sit amet laoreet id, maximus non neque. Sed rhoncus sodales ipsum, et cursus ligula mollis vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam lorem ligula, fermentum et purus ut, feugiat interdum urna. Proin volutpat felis nibh, a iaculis mauris auctor vel. Sed in quam turpis.</p>
-					
 					<div class="pleaseshareour">
 					
 						<h3 class="dn">Please share our story</h3>

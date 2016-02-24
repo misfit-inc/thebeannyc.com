@@ -95,7 +95,7 @@
 		<div class="thebeanfights"><img src="<?php bloginfo('template_url'); ?>/images/the-bean-fights-back/the-bean-fights.png" /></div>
 		<div class="readbelow"><img src="<?php bloginfo('template_url'); ?>/images/the-bean-fights-back/read-below.png" /></div>
 	<?php } else {} ?>
-
+	
 </div><!-- // container -->
 </div><!-- // header -->
 

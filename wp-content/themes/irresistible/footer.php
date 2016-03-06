@@ -25,7 +25,7 @@
 								$getimg = $data->images->low_resolution->url;
 								$getlink = $data->link;
 								
-								echo '<div class="instabox instabox' . $ii . '"><a target="_blank" href="' . $getlink . '"><img src="' . $getimg . '"/></a></div>';
+								echo '<div class="instabox instabox' . $ii . '"><a target="_blank" href="' . $getlink . '"><img src="' . get_bloginfo('template_url') . '/images/transimg.png"/><div style="background-image: url(' . $getimg . ');"></div></a></div>';
 								$ii++;
 							}
 						?>

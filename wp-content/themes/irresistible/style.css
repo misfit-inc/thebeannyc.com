@@ -1442,14 +1442,26 @@ div.wpcf7 {
 		border: 2px solid #59361C;
 	}
 	
+.wpcf7-form .wpcf7-response-output {
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+	.wpcf7-validation-errors { color: #ff0000;}
+	.wpcf7-mail-sent-ok {}
+
 .wpcf7-mail-sent-ok {
+	/*
 	-khtml-border-radius: 6px;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	clear: left;
-	display: block;
 	width: 300px;
+	display: block;
+	*/
 }
 
 .wpcf7 input, .wpcf7 select,
@@ -1825,7 +1837,13 @@ Mailchimp
 .page-id-9 #main p {
 	color: #59361c;
 	font-size: 16px !important;
+	margin: 0 0 13px;
 }
+
+.page-id-9 #main img { margin: 0 0 15px;}
+
+.abtleft { float: left; width: calc(50% - 10px);}
+.abtright { float: right; width: calc(50% - 10px);}
 
 
 /* Contact Page */

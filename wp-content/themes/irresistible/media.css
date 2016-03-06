@@ -225,12 +225,11 @@
 	
 	/* ABOUT PAGE */
 	
-	.page-id-9 #main img {
+	.abtleft,
+	.abtright {
 		float: none;
-		width: 100%;
+		width: auto;
 	}
-	
-	.page-id-9 #main p { margin: 13px 0;}
 	
 	
 	/* CONTACT PAGE */
@@ -260,7 +259,14 @@
 		font-size: 21px;
 		line-height: 28px;
 	}
-
+	
+	
+	/* CONTACT PAGE */
+	
+	.wpf-fifty { width: auto;}
+	
+	.wpf-left,
+	.wpf-right { float: none;}
 }
 
 

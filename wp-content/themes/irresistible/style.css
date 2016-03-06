@@ -205,6 +205,9 @@ blockquote {
 	width: 385px;
 	height: auto;
 	margin: 0 auto;
+	
+	position: relative;
+	z-index: 1;
 }
 
 .pssst {
@@ -402,7 +405,7 @@ blockquote {
 	margin: 9px 0;
 }
 
-#main .innerbox h4, #main .innerbox p, #main .innerbox h1, #main .innerbox h2, #main .innerbox h3 {
+#main .innerbox h4, /*#main .innerbox p,*/ #main .innerbox h1, #main .innerbox h2, #main .innerbox h3 {
 	margin-left: 30px;
 	color: #59361c;
 }
@@ -626,8 +629,11 @@ The Bean Fights Back Page (END)
 }
 
 .findbean { text-align: center; overflow: hidden;}
-.findbean p { margin: 0;}
-.findbean span { color: #fff;}
+.findbean p { color: #fff; margin: 0;}
+.findbean p.one { margin-bottom: 10px;}
+.findbean span { color: inherit;}
+.findbean a { color: #DDB86A;}
+.findbean a:hover { text-decoration: underline;}
 .loco { display: inline-block;}
 
 .loco span.dot {
@@ -1463,8 +1469,12 @@ div.wpcf7 {
 	font-weight: bold;
 	padding: 10px;
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 	.wpcf7 input[type="submit"]:hover { background-color: #8B542C;}
+
+.wpcf7 .consub { overflow: hidden;}
+.wpcf7 .consub input[type="submit"] { float: right; padding: 10px 20px; width: auto;}
 
 .wpcf7 .wpf-label {
 	margin-bottom: 10px;
@@ -1479,6 +1489,12 @@ div.wpcf7 {
 	font-size: inherit;
 	color: #ff0000;
 }
+
+.wpf-fifty {
+	width: calc(50% - 5px);
+}
+.wpf-left { float: left;}
+.wpf-right { float: right;}
 
 
 
@@ -1806,7 +1822,7 @@ Mailchimp
 
 /* About Page */
 
-.page-id-9 p {
+.page-id-9 #main p {
 	color: #59361c;
 	font-size: 16px !important;
 }
@@ -1818,6 +1834,27 @@ Mailchimp
 .conleft { float: left; width: 45%;}
 .conright { float: right; width: 50%;}
 
+.conaddress { margin-bottom: 30px;}
+.conaddress h1 {
+	font-size: 16px;
+	line-height: 18px;
+	margin-bottom: 5px;
+}
+.conaddress p {
+	color: #59361C;
+	font-size: 12px !important;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+.conaddress p.one { margin-bottom: 6px;}
+.conaddress span { font-weight: bold;}
+.conaddress i {
+	font-size: inherit;
+	color: inherit;
+	padding-right: 10px;
+}
+
 
 /* Bakery Page */
 
@@ -1828,7 +1865,7 @@ Mailchimp
 .bakedgoods .gallery { display: none;}
 
 .ovenfresh div {
-	background: none no-repeat scroll 0 0 transparent;
+	background: none no-repeat scroll center center transparent;
 	background-size: cover;
 }
 
@@ -1899,7 +1936,7 @@ Mailchimp
 	margin-left: 105px;
 	
 	position: relative;
-	z-index: 1;
+	z-index: 11;
 }
 
 .instabox {

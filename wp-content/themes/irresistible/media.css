@@ -36,6 +36,14 @@
 	}
 	
 	
+	/* HEADER */
+	
+	#nav {
+		width: 90%;
+		left: 5%;
+	}
+	
+	
 	/* CONTENT - HOMEPAGE */
 	
 	.whatwe h2 { font-size: 38px;}
@@ -178,7 +186,7 @@
 	
 	#logo {
 		margin-top: 0;
-		padding: 0 0 60px;
+		padding: 0 0 100px;
 	}
 	
 	#logo a {
@@ -204,14 +212,25 @@
 	}
 	
 	
+	/* BAKERY PAGE */
+	
+	.cupcakefull, .cupcakehalf { margin-bottom: 0;}
+	
+	.cupcakefull, .muffinfull,
+	.muffinhalf .one, .muffinhalf .two { height: 280px; margin-bottom: 2px;}
+	
+	.muffinhalf, .muffinfull { width: 100%;}
+	.cupcakehalf.left .muffinhalf, .cupcakehalf.left .muffinfull { float: none;}
+	
+	
 	/* ABOUT PAGE */
 	
-	.page-id-9 p img {
+	.page-id-9 #main img {
 		float: none;
 		width: 100%;
 	}
 	
-	.page-id-9 p { margin: 13px 0;}
+	.page-id-9 #main p { margin: 13px 0;}
 	
 	
 	/* CONTACT PAGE */
@@ -233,6 +252,14 @@
 	
 	.instabox { width: calc(20% - 22px);}
 	.instabox5 { display: none;}
+	
+	
+	/* the bean fights back */
+	
+	#main.tbfb .post.clearfix p {
+		font-size: 21px;
+		line-height: 28px;
+	}
 
 }
 

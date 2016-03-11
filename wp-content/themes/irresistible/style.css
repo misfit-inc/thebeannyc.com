@@ -716,7 +716,7 @@ ul.nav { margin: 0 }
 #nav {
 	overflow: hidden;
 	padding: 0;
-	width: 85%;
+	width: 90%;
 	
 	position: absolute;
 	top: 105px;
@@ -772,6 +772,9 @@ ul.nav { margin: 0 }
 
 	#nav li#menu-item-18 a:hover,
 	#nav li#menu-item-18.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center -300px;}
+
+	#nav li#menu-item-106 a:hover,
+	#nav li#menu-item-106.current-menu-item a { background: transparent url(../../../images/nav-icons.png) no-repeat scroll center 23px;}
 
 
 

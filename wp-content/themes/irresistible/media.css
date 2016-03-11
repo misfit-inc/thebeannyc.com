@@ -28,6 +28,28 @@
 /* ------------------------------  1023 - 0000  ------------------------------ */
 
 @media only screen and (max-width: 1023px) {
+
+	/* HEADER */
+	
+	#logo {
+		margin-top: -68px;
+	}
+
+	#logo a {
+		width: 310px;
+	}
+	
+	.beansteam {
+		width: 620px;
+	}
+	
+	#nav {
+		width: 100%;
+		
+		top: auto;
+		bottom: 30px;
+		left: 0;
+	}
 	
 	/* BASE STYLES */
 	
@@ -86,7 +108,7 @@
 	
 	/* HEADER */
 	
-	#logo {
+	/*#logo {
 		margin-top: -68px;
 	}
 
@@ -104,7 +126,7 @@
 		top: auto;
 		bottom: 30px;
 		left: 0;
-	}
+	}*/
 	
 	/* CONTENT - HOMEPAGE */
 	
@@ -175,10 +197,9 @@
 }
 
 
+/* ------------------------------  900 - 000  ------------------------------ */
 
-/* ------------------------------  767 - 000  ------------------------------ */
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
 
 	/* HEADER */
 	
@@ -192,13 +213,8 @@
 	#logo a {
 		width: 45%;
 	}
-	
-	/* FOOTER */
-	
-	.instabox { width: calc(16.66% - 22px);}
-	.instabox6 { display: none;}
-	
-	
+
+
 	/* .menubox */
 	
 	.menubox {
@@ -210,6 +226,44 @@
 	.menubox.right {
 		float: none;
 	}
+
+}
+
+
+/* ------------------------------  767 - 000  ------------------------------ */
+
+@media only screen and (max-width: 767px) {
+
+	/* HEADER */
+	
+	/*.beansteam { display: none;}
+	
+	#logo {
+		margin-top: 0;
+		padding: 0 0 100px;
+	}
+	
+	#logo a {
+		width: 45%;
+	}*/
+	
+	/* FOOTER */
+	
+	.instabox { width: calc(16.66% - 22px);}
+	.instabox6 { display: none;}
+	
+	
+	/* .menubox */
+	
+	/*.menubox {
+		width: auto;
+		margin-left: 0;
+	}
+	
+	.menubox.left,
+	.menubox.right {
+		float: none;
+	}*/
 	
 	
 	/* BAKERY PAGE */
@@ -246,6 +300,42 @@
 /* ------------------------------  599 - 000  ------------------------------ */
 
 @media only screen and (max-width: 599px) {
+
+	/* HEADER */
+	
+	#logo {
+		margin-top: 0;
+		padding: 0 0 15px;
+	}
+	
+	#logo a {
+		width: 70%;
+	}
+	
+	#nav {
+		position: static;
+		width: auto;
+	}
+	
+	.nav-lsm,
+	.nav-rsm {
+		float: none;
+		text-align: center;
+	}
+	.nav-lsm { margin-bottom: 10px;}
+	
+	#nav li {
+		float: none;
+		display: inline-block;
+		
+		min-width: 0;
+	}
+	
+	#nav li a {
+		padding: 0;
+	}
+	#nav li.current-menu-item a { font-weight: bold;}
+
 
 	/* FOOTER */
 	
@@ -290,7 +380,7 @@
 
 	/* HEADER */
 	
-	#logo {
+	/*#logo {
 		margin-top: 0;
 		padding: 0 0 15px;
 	}
@@ -321,7 +411,7 @@
 		padding: 0;
 	}
 	#nav li.current-menu-item a { font-weight: bold;}
-	
+	*/
 	
 	/* CONTENT - HOMEPAGE */
 	

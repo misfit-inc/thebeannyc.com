@@ -716,11 +716,11 @@ ul.nav { margin: 0 }
 #nav {
 	overflow: hidden;
 	padding: 0;
-	width: 90%;
+	width: 100%;
 	
 	position: absolute;
 	top: 105px;
-	left: 7.5%;
+	left: 0;
 }
 
 #nav ul {

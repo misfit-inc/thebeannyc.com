@@ -296,10 +296,7 @@
 }
 
 
-
-/* ------------------------------  599 - 000  ------------------------------ */
-
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 700px) {
 
 	/* HEADER */
 	
@@ -308,9 +305,9 @@
 		padding: 0 0 15px;
 	}
 	
-	#logo a {
+	/*#logo a {
 		width: 70%;
-	}
+	}*/
 	
 	#nav {
 		position: static;
@@ -335,6 +332,48 @@
 		padding: 0;
 	}
 	#nav li.current-menu-item a { font-weight: bold;}
+	
+}
+
+
+/* ------------------------------  599 - 000  ------------------------------ */
+
+@media only screen and (max-width: 599px) {
+
+	/* HEADER */
+	
+	/*#logo {
+		margin-top: 0;
+		padding: 0 0 15px;
+	}*/
+	
+	#logo a {
+		width: 70%;
+	}
+	
+	/*#nav {
+		position: static;
+		width: auto;
+	}
+	
+	.nav-lsm,
+	.nav-rsm {
+		float: none;
+		text-align: center;
+	}
+	.nav-lsm { margin-bottom: 10px;}
+	
+	#nav li {
+		float: none;
+		display: inline-block;
+		
+		min-width: 0;
+	}
+	
+	#nav li a {
+		padding: 0;
+	}
+	#nav li.current-menu-item a { font-weight: bold;}*/
 
 
 	/* FOOTER */
